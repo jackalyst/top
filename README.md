@@ -6,3 +6,4 @@ Wouldn't it be nice to `.class:click` something instead of attaching an event? O
 
 # How it works
 
+Qi works by parsing the CSS file(s) with builtin javascript functions and executing changes through the library.
