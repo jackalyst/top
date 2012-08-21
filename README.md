@@ -1,8 +1,6 @@
-# Qi: Javascript icing for CSS.
+# Qi: Javascript 'assisted' CSS.
 
-For some things people seem to delve into javascript just to do something that could (or dare I say /should/) be done in CSS.
-
-Wouldn't it be nice to `.class:click` something instead of attaching an event? Or to select a parent element?
+Allowing present day standards CSS to enter a feature rich and backwards compatible arena. No dependancies.
 
 # How it works
 
