@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Qi: Intelligent Conversions</title>
+  <style type="text/css" media="screen">
+  body {
+    font: 100% "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+    color:#222;
+  }
+  p {
+    color:#F00;
+    font-style: italic;
+  }
+  #wrapper {
+    width:80%;
+    margin:0 auto;
+  }
+  #area, #output {
+    margin:5px;
+    padding:5px;
+  }
+  input {
+    padding:3px; margin-left:3px;
+    border:4px solid #000;
+    width:100%;
+  }
+  label, input {
+    font-size:2em;
+  }
+  </style>
+  <script type="text/javascript" charset="utf-8">
+  // Setup.
+  function $(id) {
+    return document.getElementById(id);
+  }
+
+  function addEvent(el, eType, fn, uC) {
+    if (el.addEventListener) {
+      el.addEventListener(eType, fn, uC);
+      return true;
+    } else if (el.attachEvent) {
+      return el.attachEvent('on' + eType, fn);
+    } else {
+      el['on' + eType] = fn;
+    }
+  }
+  
+  var unit_checker = function(unit) {
+    var types = [], check = [];
+
+    // Is the unit mass?
+    check['mass'] = new RegExp(/kg|lb/i);
+    check['size'] = new RegExp(/cm|m|in|kg/i);
+
+
+    for(var i in check) {
+      check_result = unit.match(check[i]);
+
+      if(check_result!=null) {
+        types.push(i);
+
+
+      }
+    }
+
+
+    return ['mass',unit.match(/kg|lb|pound/i)];
+  }
+  
+  var checkConversion = function() {
+    // Define areas of interest.
+    var oa = $("area");
+    var ca = $("output");
+    
+    // Input Value (iv) from form.
+    var iv = $("input").value;
+
+    // Generate hashtag to share with others.
+    window.location.hash="#"+iv.replace(/\s/ig,'_');
+
+    // Split it to create Input Unit (iu) and Output Unit (iu)
+    var iv_split = iv.split(/\sto?|=/i);
+    //console.log(iv_split);
+
+    var iu = iv_split[0]+' ';
+    var ou = iv_split[1]+' ';
+
+    // Split based on adding and subtracting
+    var formulate = iu.split(/(\+|\-)/i);
+
+
+    
+
+    // Go through each UNIT.
+    units = []; types = [];
+
+    for (var i = formulate.length - 1; i >= 0; i--) {
+      if(formulate[i].match(/(\+|\-)/i) === null) {
+        // Get unit... ## Breaks less than IE8
+        var [type, unit] = unit_checker(formulate[i]);
+
+        units.push(unit); types.push(type);
+       }
+    };
+
+
+    for (var i = types.length - 1; i >= 0; i--) {
+      if(types[i-1]!=undefined) {
+        if(types[i-1] != types[i]) {
+          ca.innerHTML = "Oh no";
+        }
+      }
+
+    };
+
+    // console.log(units);
+  };
+
+  window.onload = function() {
+    $("input").value = window.location.hash.replace(/#/i,'').replace(/_/ig,' ');
+    checkConversion();
+    
+    addEvent($("input"),'keyup',checkConversion,false);
+  }
+  </script>
+</head>
+<body>
+  <div id="wrapper">
+    <h1>Qi: Intelligent Conversions</h1>
+    <p>Right now we're just testing with kilograms to test a point.</p>
+    <label for="input">Input Unit</label><input type="text" name="input" value="" id="input" placeholder="Type your unit (5 kg, #FFFFFF)">
+    <div id="area">
+      
+    </div>
+    <div id="output">
+      
+    </div>
+    <h3>Things to try</h3>
+    <ul>
+      <li><b>Basic</b>
+        <ul>
+          <li>8kg</li>
+          <li>9lb to kg</li>
+          <li>#FFFFFF</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
