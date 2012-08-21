@@ -45,7 +45,7 @@
       el['on' + eType] = fn;
     }
   }
-  
+
   var unit_checker = function(unit) {
     var types = [], check = [];
 
@@ -67,12 +67,12 @@
 
     return ['mass',unit.match(/kg|lb|pound/i)];
   }
-  
+
   var checkConversion = function() {
     // Define areas of interest.
     var oa = $("area");
     var ca = $("output");
-    
+
     // Input Value (iv) from form.
     var iv = $("input").value;
 
@@ -90,7 +90,7 @@
     var formulate = iu.split(/(\+|\-)/i);
 
 
-    
+
 
     // Go through each UNIT.
     units = []; types = [];
@@ -120,7 +120,7 @@
   window.onload = function() {
     $("input").value = window.location.hash.replace(/#/i,'').replace(/_/ig,' ');
     checkConversion();
-    
+
     addEvent($("input"),'keyup',checkConversion,false);
   }
   </script>
@@ -131,10 +131,10 @@
     <p>Right now we're just testing with kilograms to test a point.</p>
     <label for="input">Input Unit</label><input type="text" name="input" value="" id="input" placeholder="Type your unit (5 kg, #FFFFFF)">
     <div id="area">
-      
+
     </div>
     <div id="output">
-      
+
     </div>
     <h3>Things to try</h3>
     <ul>
