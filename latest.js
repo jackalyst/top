@@ -1,4 +1,3 @@
-// Contributing a useless change to a file.
 // Testing out stylesheet detection.
 window.onload = function() {
 	var stylesheets = document.styleSheets;
