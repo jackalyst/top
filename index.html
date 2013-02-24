@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Qi</title>
-  <link rel="stylesheet" type="text/css" href="//fi.kamris.ca/current.css">
+	<meta charset="utf-8">
+	<title>Qi: CSS Flow</title>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">  
+	<style type="text/css">
+	/* Inline 1.0 */
+	html, body { padding:0 5px; margin:0 auto; font-family:sans-serif; color:#444; max-width: 500px; }
+	h1, h2, h3, h4, h5 { color:#000; margin:0; }
+	h1 { background-color: #800; color:#FFF; padding:4px 7px; }
+	h2 { color:#800;}
+	a { color:#009; }
+	code { border:1px solid #CCC; padding:1px 3px; }
+	code.block {white-space: pre; display:block; padding:5px; }
+	</style>
 </head>
 <body>
+
+<h1>Qi: CSS Flow</h1>
+<nav>
+	<ul>
+		<li><a href="#intro">Introduction</a></li>
+		<li><a href="#examples">Example Usage</a>
+			<ul>
+				<li><a href="#:click">:click</a></li>
+			</ul>
+		</li>
+		<li><a href="#download">Download / Use</a></li>
+	</ul>
+</nav>
+
+<h2>Introduction</h2>
+<p>Qi attempts to complete the flow of styling documents through the addition of CSS4 proposals and HTML5 form element extensions.</p>
+<p>Uses <code>document.querySelector()</code> in order to extend functionality to CSS by adding things like <code>:click</code> or offering different ways to traverse the document tree.</p>
+
+<h2>Example Usage</h2>
+<p>Usage is simple, but usage must be in it's own block.</p>
+<p><code class="block">selector:click {
+	color:#000;
+}</code></p>
+
+<h2>Notes</h2>
+<p>Adding will invalidate your CSS code against the W3C.</p>
+
+<h2>Download / Use</h2>
+<p>Right Click to download.</p>
+<ul>
+	<li><a href="#">Download Minified (249 bytes)</a></li>
+	<li><a href="/latest.js">Download Full (530 bytes)</a></li>
+</ul>
 
 </body>
 </html>
