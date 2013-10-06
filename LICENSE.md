@@ -1,4 +1,5 @@
 Statement of Purpose
+(A Public Domain License)
 
 The laws of most jurisdictions throughout the world automatically
 confer exclusive Copyright and Related Rights (defined below) upon the
