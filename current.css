@@ -1,0 +1,99 @@
+/**
+ * Global box-sizing setting.
+ *
+ * 'border-box' includes borders, margin and padding when
+ * calculating the width.
+ *
+ * IE6 & IE7 get this box-sizing model by
+ * operating in quirks mode by a comment
+ * above doctype declaration.
+ *
+ * The universal selector is used to maintain
+ * expected behavior across all elements.
+ *
+ * While it is argued that '*' has a performance impact,
+ * it is quite negligible.
+ */
+* {
+       -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        vertical-align: top;
+}
+
+/**
+ * Margin and padding reset.
+ *
+ * To be redone later by TYPOGRAPHY
+ */
+html, body, p, h1, h2, h3, h4, h5, ul, ol, li {
+    margin:0; padding:0;
+}
+
+/**
+ * Basic layout chunking.
+ *
+ * In order to achieve IE6 compatibility
+ * we don't use direct descendant selectors :(
+ */
+.phi {
+	display: block;
+	clear: both;
+	width:100%;
+}
+.phi div {
+	float:left;
+	width:100%;
+	overflow:hidden; /* Rounding fix. */
+}
+
+.phi .c1 { width: 8.3%; }
+.phi .c2 { width: 16.7%; }
+.phi .c3 { width: 25.0%; }
+.phi .c4 { width: 33.3%; }
+.phi .c5 { width: 41.7%; }
+.phi .c6 { width: 50.0%; }
+.phi .c7 { width: 58.3%; }
+.phi .c8 { width: 66.7%; }
+.phi .c9 { width: 75.0%; }
+.phi .c10 { width: 83.3%; }
+.phi .c11 { width: 91.7%; }
+.phi .c12 { width: 100.0%; }
+
+.phi .p1 { margin-left: 8.3%; }
+.phi .p2 { margin-left: 16.7%; }
+.phi .p3 { margin-left: 25.0%; }
+.phi .p4 { margin-left: 33.3%; }
+.phi .p5 { margin-left: 41.7%; }
+.phi .p6 { margin-left: 50.0%; }
+.phi .p7 { margin-left: 58.3%; }
+.phi .p8 { margin-left: 66.7%; }
+.phi .p9 { margin-left: 75.0%; }
+.phi .p10 { margin-left: 83.3%; }
+.phi .p11 { margin-left: 91.7%; }
+
+/*
+ * TYPOGRAPHY */
+p, h2, h3, h4, h5, code, ul, ol, li {
+  line-height: 22px; /* Baseline here. */
+  font-size: 14px;
+}
+
+h1 { font-size:28px; line-height: 44px; }
+h2 { font-size:22px; }
+h3 { font-size:18px; }
+h4 { font-size:16px; }
+h5 { font-size:15px; }
+
+p, ul, ol, form {
+  margin-bottom:22px;
+}
+
+ul ul, ul ol, ol ul, ol ol,
+p:last-child, ul:last-child, ol:last-child {
+  margin-bottom:0px;
+}
+
+ul, ol {
+  padding-left: 22px;
+}
