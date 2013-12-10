@@ -1,9 +1,16 @@
-<!--[if (IE 6)|(IE 7)]>
+[if (IE 6)|(IE 7)]>
 <!--
-The documentation source
+Source page and blueprint.
 
-Triggers IE 6/7 Quirks for box-sizing:border-box by having content
-before the doctype: http://www.quirksmode.org/css/quirksmode.html
+'top' is forward thinking but backwards compatible, meaning that
+the basic layout structure of the site will display nicely
+right down to IE 6, but that's it. Beautiful things happen at
+IE 9.
+
+The first thing is that we've triggered box-sizing:border-box
+throughout the entirety of the site. In order to keep it compatible (IE)
+content has to be added before the doctype. You can read more
+about what that means http://www.quirksmode.org/css/quirksmode.html
 -->
 <![endif]-->
 <!DOCTYPE html>
@@ -16,9 +23,11 @@ before the doctype: http://www.quirksmode.org/css/quirksmode.html
 		/* Include .css */
 		<?php include('top.bleeding.min.css'); ?>
 
+		/* Body type might be added to top later */
 		body {
 			font-family: sans-serif;
 		}
+
 		/* Establish layout */
 		.c {
 			margin: 0 auto;
@@ -58,3 +67,10 @@ before the doctype: http://www.quirksmode.org/css/quirksmode.html
 	</div>
 </body>
 </html>
+<!--
+ Anything that's either below frame,
+ modern, or javascript.
+-->
+<!--[if (!IE)|(gte IE 9)]><!-->
+<link rel="stylesheet" href="">
+<!-- <![endif]
