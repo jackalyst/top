@@ -1,4 +1,4 @@
-[if (IE 6)|(IE 7)]>
+<!--[if (IE 6)|(IE 7)]>
 <!--
 Source page and blueprint.
 
