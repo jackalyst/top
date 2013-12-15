@@ -14,7 +14,10 @@ about what that means http://www.quirksmode.org/css/quirksmode.html
 -->
 <![endif]-->
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7 ]><html class="ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
 	<title>top: A high performance css/js front-end</title>
@@ -49,6 +52,9 @@ about what that means http://www.quirksmode.org/css/quirksmode.html
 
 		/* Anything that's above frame */
 	</style>
+	<!--[if lt IE 9]>
+    <script src="components/html5shiv/html5shiv.js"></script>
+	<![endif]-->
 </head>
 <body>
 	<div class="c body">
@@ -56,8 +62,8 @@ about what that means http://www.quirksmode.org/css/quirksmode.html
 			<div class="head">top</div>
 		</div>
 		<div class="c9 body">
-			<h1>top (unstable)</h1>
-			<p>A high performance (seldom-request-blocking) front-end guide for websites aimed towards screen devices and printers.</p>
+			<h1>top</h1>
+			<p>An HTML5 ready to go high performance (non-blocking) front-end guide for websites aimed towards recent screen devices yet capable of legacy support.</p>
 			<p>The aim is to setup a complete framework to work from that already separates what needs to be loaded immediately to what can be loaded later.</p>
 			<ul>
 				<li>Carousels</li>
@@ -67,10 +73,6 @@ about what that means http://www.quirksmode.org/css/quirksmode.html
 	</div>
 </body>
 </html>
-<!--
- Anything that's either below frame,
- modern, or javascript.
--->
 <!--[if (!IE)|(gte IE 9)]><!-->
 <link rel="stylesheet" href="">
 <!-- <![endif] -->
