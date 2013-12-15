@@ -1,8 +1,8 @@
 /**
- * Global box-sizing setting.
+ * Global box-sizing setting to border-box
  *
  * 'border-box' includes borders, margin and padding when
- * calculating the width.
+ * calculating the width and height of elements.
  *
  * IE6 & IE7 get this box-sizing model by
  * operating in quirks mode by a comment
@@ -12,29 +12,37 @@
  * expected behavior across all elements.
  *
  * While it is argued that '*' has a performance impact,
- * it is quite negligible.
+ * it is quite negligible for recent browsers, and so long
+ * as it loads on older IE6/IE7 browsers that's fine.
+ *
+ * See: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  */
-* {
+*, *:before, *:after {
        -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-        vertical-align: top;
+        vertical-align: top; /* For table-cell things */
 }
 
 /**
  * Margin and padding reset.
- *
- * To be redone later by TYPOGRAPHY
+ * (To be set again by typography)
  */
 html, body, p, h1, h2, h3, h4, h5, ul, ol, li {
     margin:0; padding:0;
 }
 
 /**
- * Basic layout chunking.
+ * Layout
+ *
+ * Based on a 12 column system.
+ *
+ * 960px = 80px per column excluding padding.
+ *
+ * Padding will need to be added later
  *
  * In order to achieve IE6 compatibility
- * we don't use direct descendant selectors :(
+ * direct descendant selectors aren't used.
  */
 .c {
 	display: block;
@@ -45,6 +53,12 @@ html, body, p, h1, h2, h3, h4, h5, ul, ol, li {
 	float:left;
 	width:100%;
 	overflow:hidden; /* Rounding fix. */
+}
+.c:after {
+  content: " ";
+  height:0;
+  display:block;
+  clear:both;
 }
 
 .c .c1 { width: 8.3%; }
@@ -72,8 +86,9 @@ html, body, p, h1, h2, h3, h4, h5, ul, ol, li {
 .c .p10 { margin-left: 83.3%; }
 .c .p11 { margin-left: 91.7%; }
 
-/*
- * TYPOGRAPHY */
+/**
+ * Typography
+ */
 p, h2, h3, h4, h5, code, ul, ol, li {
   line-height: 22px; /* Baseline here. */
   font-size: 14px;
@@ -97,3 +112,9 @@ p:last-child, ul:last-child, ol:last-child {
 ul, ol {
   padding-left: 22px;
 }
+
+/**
+ * Forms
+ *
+ * Generic form reset for behavior
+ */
