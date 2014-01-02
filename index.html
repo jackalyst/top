@@ -1,0 +1,151 @@
+<!--[if (IE 6)|(IE 7)]>
+<!--
+Source page and blueprint.
+
+'top' is forward thinking but backwards compatible, meaning that
+the basic layout structure of the site will display nicely
+right down to IE 6, but that's it. Beautiful things happen at
+IE 9.
+
+The first thing is that we've triggered box-sizing:border-box
+throughout the entirety of the site. In order to keep it compatible (IE)
+content has to be added before the doctype. You can read more
+about what that means http://www.quirksmode.org/css/quirksmode.html
+-->
+<![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>top: A high performance css/js front-end</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	/* top */
+	*,:after,:before{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:sans-serif}body,h1,h2,h3,h4,h5,html,li,ol,p,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.r{display:block;clear:both;width:100%}.r div{float:left;width:100%;overflow:hidden}.r:after{content:" ";height:0;display:block;clear:both}.r .c1{width:8.3%}.r .c2{width:16.7%}.r .c3{width:25%}.r .c4{width:33.3%}.r .c5{width:41.7%}.r .c6{width:50%}.r .c7{width:58.3%}.r .c8{width:66.7%}.r .c9{width:75%}.r .c10{width:83.3%}.r .c11{width:91.7%}.r .c12{width:100%}.r .p1{margin-left:8.3%}.r .p2{margin-left:16.7%}.r .p3{margin-left:25%}.r .p4{margin-left:33.3%}.r .p5{margin-left:41.7%}.r .p6{margin-left:50%}.r .p7{margin-left:58.3%}.r .p8{margin-left:66.7%}.r .p9{margin-left:75%}.r .p10{margin-left:83.3%}.r .p11{margin-left:91.7%}code,h2,h3,h4,h5,input,label,li,ol,p,textarea,ul{line-height:22px;font-size:14px}h1{font-size:28px;line-height:44px}h2{font-size:22px}h3{font-size:18px}h4{font-size:16px}h5{font-size:15px}form,ol,p,ul{margin-bottom:22px}ol ol,ol ul,ol:last-child,p:last-child,ul ol,ul ul,ul:last-child{margin-bottom:0}ol,ul{padding-left:22px}dt{font-weight:700}input,textarea{border:1px solid #BBB}
+
+		/* Body type might be added to top later */
+		body {
+			color:#444;
+		}
+
+		h1, h2, h3, dt, label {
+			color:#111;
+		}
+
+		/* Establish layout */
+		.r {
+			margin: 0 auto;
+			max-width: 600px;
+			_width: 600px;
+		}
+		.r .head h1 {
+			text-align: center;
+			font-size: 80px;
+			line-height: 100px;
+		}
+		.r .body {
+			padding-top:100px;
+		}
+		.r div {
+			padding-right: 5px;
+			padding-left:5px;
+		}
+		a {
+			color:#44F;
+		}
+		/* Anything that's above frame */
+	</style>
+</head>
+<body>
+	<div class="r body">
+		<div class="c3">
+			<div class="head">
+				<h1>top</h1>
+				<nav>
+					<ul>
+						<li><a href="#form">Foundation</a></li>
+						<li><a href="#lists">Typography</a></li>
+						<li><a href="#other">Forms &amp; Buttons</a></li>
+						<li><a href="#other">Tables</a></li>
+						<li><a href="#other">Menu's</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="c9 body">
+			<h1>top [alpha]</h1>
+			<p>A complete HTML5 <a href="http://developers.google.com/speed/pagespeed/insights/?url=top.kamris.com">high performance</a> front-end for websites aimed towards recent screen devices with tiered fallback.</p>
+
+
+			<h2>Features</h2>
+
+			<ul>
+				<li>
+					High Performant
+					<ul>
+						<li>Small footprint. Under 1kb minified and gzipped.</li>
+						<li>Immediate paint-times.</li>
+						<li>Non-blocking CSS &amp; Javascript</li>
+					</ul>
+				</li>
+				<li>
+					Tiered Compatibility
+					<ul>
+						<li>Tier 0: Enterprise browsers will still render layout in IE6/7 (Will be removed around ~version 3)</li>
+						<li>Tier 1: (optional) IE8 will render layout as well as functional elements. </li>
+						<li>Tier 2: IE9+ Gets the full experience.</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h2>TODO</h2>
+			<ul>
+				<li>IE8+ Form elements for HTML5.</li>
+				<li>Load JS as needed.</li>
+			</ul>
+
+			<h2 id="form">Forms</h2>
+			<form action="/">
+				<dl>
+					<dt><label for="username">Username</label></dt>
+					<dd><input id="username" name="username" type="text" placeholder="Username"></dd>
+				</dl>
+				<dl>
+					<dt><label for="biography">Biography</label></dt>
+					<dd><textarea name="biography" id="biography"></textarea></dd>
+				</dl>
+				<input type="submit">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
+<!--[if lt IE 9]>
+<script src="components/html5shiv/html5shiv.js"></script>
+<![endif]-->
+<!--[if (!IE)|(gte IE 9)]><!-->
+<noscript>
+	<link rel="stylesheet" href="okay/something.css">
+	<link rel="stylesheet" href="okay/something2.css">
+</noscript>
+<script type="text/javascript">
+// Autoload css files placed inside of the no script element.
+var noscript = document.getElementsByTagName('noscript')[0].innerHTML;
+var css = noscript.match(/[a-zA-Z0-9\/\:]+\.css/g);
+
+for (var i = 0; i < css.length; i++) {
+	var head = document.getElementsByTagName("head")[0];
+	var link = document.createElement('link');
+
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = css[i];
+    link.media = 'all';
+
+    head.appendChild(link);
+};
+</script>
+<!-- <![endif] -->
