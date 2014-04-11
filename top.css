@@ -1,3 +1,4 @@
+/*! top.css v1.0 | MIT License */
 /**
  * Global box-sizing setting to border-box
  *
@@ -28,15 +29,8 @@
  * Margin and padding reset.
  * (To be set again by typography)
  */
-html, body, p, h1, h2, h3, h4, h5, ul, ol, li {
+html, body, p, h1, h2, h3, h4, h5, h6 ul, ol, li {
     margin:0; padding:0;
-}
-
-/**
- * To maintain consistent styling for HTML5 elements.
- */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-     display: block;
 }
 
 /**
@@ -44,36 +38,51 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  *
  * Based on a 12 column system.
  *
- * 960px = 80px per column excluding padding.
+ * 960px = 80px per column excluding padding
  *
  * Padding will need to be added later
  *
  * In order to achieve IE6 compatibility
  * direct descendant selectors aren't used.
  */
+/* IE6/7 Center */
+body { text-align: center; }
+body .r { text-align: left; }
+
 .r {
-	display: block;
-	clear: both;
 	width:100%;
-}
-.r div {
-	float:left;
-	width:100%;
-	overflow:hidden; /* Rounding fix. */
-}
-.r:after {
-  content: " ";
-  height:0;
-  display:block;
-  clear:both;
+  margin:0 auto;
+  font-size:0;
 }
 
-.r .c1 { width: 8.3%; }
-.r .c2 { width: 16.7%; }
+.r span {
+  width:100%;
+  display: inline-block;
+  vertical-align: top;
+  font-size:14px;
+}
+ /* IE6, IE7 for Sub columns */
+.ie6 .r span .r,
+.ie7 .r span .r {
+  width:100%;
+}
+/* IE6, IE7 */
+.ie7 span, .ie6 span {
+  margin-right:-1px;
+}
+
+/**
+ * Flexible Columns
+ *  600/12 = 50 
+ *  960/12 = 80
+ * 1440/12 = 120 
+ */
+.r .c1 { width: 8.33%; }
+.r .c2 { width: 16.66%; }
 .r .c3 { width: 25.0%; }
-.r .c4 { width: 33.3%; }
+.r .c4 { width: 33.33%; }
 .r .c5 { width: 41.7%; }
-.r .c6 { width: 50.0%; }
+.r .c6 { width: 50%; }
 .r .c7 { width: 58.3%; }
 .r .c8 { width: 66.7%; }
 .r .c9 { width: 75.0%; }
@@ -95,9 +104,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /**
  * Typography
+ *
+ * Baseline is 22px.
+ * 
+ * We're using pixels for a few reasons.
+ * 
+ * 1. It's the standard measurement of screens, and follows
+ * 
  */
 p, h2, h3, h4, h5, code, ul, ol, li, input, label, textarea {
-  line-height: 22px; /* Baseline here. */
+  line-height: 22px;
   font-size: 14px;
 }
 
@@ -122,9 +138,22 @@ ul, ol {
 dt {
   font-weight: bold;
 }
-/**
- * Forms "typography"
- */
+dd {
+  margin:0;
+}
+
 input, textarea {
   border:1px solid #BBB;
+  width:100%; padding:6px;
+  font-size:14px; line-height: 22px;
+}
+
+/* Buttons */
+button,
+input[type="submit"] {
+  color: #FFF;
+  border: 1px solid #783700;
+  padding: 6px 10px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.6) 100%);
+  background-color: #55D;
 }
