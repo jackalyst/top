@@ -1,0 +1,192 @@
+<!--[if (IE 6)|(IE 7)]>
+<!-- Quirks Mode IE6 and 7 for box model border-box -->
+<![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<title>Top test</title>
+	<link rel="stylesheet" href="../normalize.css">
+	<link rel="stylesheet" href="../top.css">
+	<style>
+	/* Layout */
+	.r {
+		max-width: 960px;
+	}
+	.r span {
+		padding:10px;
+		border:1px solid #000;
+	}
+	</style>
+</head>
+<body>
+
+<div class="r">
+	<span class="c3">
+		<ul class="menu">
+			<li><a href="">Some</a></li>
+			<li><a href="">Links</a></li>
+			<li><a href="">That</a></li>
+			<li><a href="">Lead</a></li>
+			<li><a href="">Nowhere</a></li>
+		</ul>
+		
+	</span>
+	<span class="c9">
+		<h2>Top [alpha]</h2>
+		<p>Consider Top to be your complete simple to understand CSS framework. It doesn't use SASS, Stylus, or the latest Stylesheet language of the day because it makes some fundamental assumptions while not getting in the way of stylistic design choices.
+		</p>
+
+		<h3>Thoughts behind the Top Foundation</h3> 
+		<h4>1. box-sizing:border-box</h4>
+		<p>What was long ago considered a buggy implementation by Internet Explorer has now made its way to a feature that makes it easier to create layouts. <code>border-box: box-sizing</code> allows you forget about subtracting borders and padding from your container in order to build your layout.</p>
+		<h4>2. Layout based on inline-block</h4>
+		<p>It was decided to use <code>inline-block</code> because it's an arguably easier thing to comprehend when compared to floats and offered features like being able to use <code lang="css">vertical-align</code>.</p>
+		<h4>3. Desktop First</h4>
+		<p>There's a whole world out there that wants to design for mobile first, adding media queries for the desktop experience. The argument is that this allows</p>
+	</span>
+</div>
+
+<div class="r">
+	<span class="c6">
+		Column 1
+	</span>
+	<span class="c6">
+		Column 2
+		<div class="r">
+			<span class="c6">Sub Column 1</span>
+			<span class="c6">Sub Column 2</span>
+		</div>
+	</span>
+</div>
+<div class="r">
+	<span><h2>Various Column Lengths</h2></span>
+	<span class="c1">C1</span>
+	<span class="c1">C2</span>
+	<span class="c1">C3</span>
+	<span class="c1">C4</span>
+	<span class="c1">C5</span>
+	<span class="c1">C6</span>
+	<span class="c1">C7</span>
+	<span class="c1">C8</span>
+	<span class="c1">C9</span>
+	<span class="c1">C10</span>
+	<span class="c1">C11</span>
+	<span class="c1">C12</span>
+</div>
+<div class="r">
+	<span class="c2">C1</span>
+	<span class="c2">C2</span>
+	<span class="c2">C3</span>
+	<span class="c2">C4</span>
+	<span class="c2">C5</span>
+	<span class="c2">C6</span>
+</div>
+
+<div class="r">
+	<span class="c3">C1</span>
+	<span class="c3">C2</span>
+	<span class="c3">C3</span>
+	<span class="c3">C4</span>
+</div>
+<div class="r">
+	<span class="c4">C1</span>
+	<span class="c4">C2</span>
+	<span class="c4">C3</span>
+</div>
+<div class="r">
+	<span>
+		<table class="mytable">
+			<thead>
+			    <tr>
+			        <td>Period</td>
+			        <td>Full Board</td>
+			        <td>Half Board</td>
+			        <td>Bed and Breakfast</td>
+			    </tr>
+			</thead>
+			<tbody>
+			    <tr>
+			        <td>01/10/12 - 02/10/12</td>
+			        <td>20 €</td>
+			        <td>30 €</td>
+			        <td>40 €</td>
+			    </tr>
+			    <tr>
+			        <td>03/10/12 - 04/10/12</td>
+			        <td>40 €</td>
+			        <td>50 €</td>
+			        <td>60 €</td>
+			    </tr>
+			    <tr>
+			        <td>05/10/12 - 06/10/12</td>
+			        <td>70 €</td>
+			        <td>80 €</td>
+			        <td>90 €</td>
+			    </tr>
+			</tbody>
+		</table>
+
+		<form>
+			<form action="/">
+				<dl>
+					<dt><label for="username">Username</label></dt>
+					<dd><input id="username" name="username" type="text" placeholder="Username"></dd>
+				</dl>
+				<dl>
+					<dt><label for="date">Date</label></dt>
+					<dd><input id="date" name="date" type="date"></dd>
+				</dl>
+				<dl>
+					<dt><label for="time">Time</label></dt>
+					<dd><input id="time" name="time" type="time"></dd>
+				</dl>
+				<dl>
+					<dt><label for="number">Number</label></dt>
+					<dd><input id="number" name="number" type="number"></dd>
+				</dl>
+				<dl>
+					<dt><label for="range">Range</label></dt>
+					<dd><input id="range" name="range" type="range" min="1" max="100" value="5"></dd>
+				</dl>
+				<dl>
+					<dt><label for="password">Password</label></dt>
+					<dd><input name="password" id="password" type="password"></dd>
+				</dl>
+				<dl>
+					<dt><label for="biography">Biography</label></dt>
+					<dd><textarea name="biography" id="biography"></textarea></dd>
+				</dl>
+				<input type="submit">
+			</form>
+		</form>
+	</span>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script>
+$(function(){
+	// function html(typeName) {
+	//     var input = document.createElement("input");
+	//     input.setAttribute("type", typeName);
+	//     var val = (input.type !== "text");
+	//     delete input;
+	//     return val;
+	// }
+	// var input_types = ['password','date','number'];
+	// for (var i = input_types.length - 1; i >= 0; i--) {
+	// 	// alert(input_types[i] + " is " + html(input_types[i]));
+	// };
+
+	// $('#number').change(function() {
+	// 	console.log($('#number').value);
+	// 	// $('label[for="number"]').
+	// })
+});
+</script>
+</body>
+</html>
