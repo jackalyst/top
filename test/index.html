@@ -11,6 +11,7 @@
 	<title>Top test</title>
 	<link rel="stylesheet" href="../normalize.css">
 	<link rel="stylesheet" href="../top.css">
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 	<style>
 	/* Layout */
 	.r {
@@ -149,8 +150,16 @@
 					<dd><input id="number" name="number" type="number"></dd>
 				</dl>
 				<dl>
+					<dt><label for="tel">Telephone</label></dt>
+					<dd><input id="tel" name="tel" type="tel"></dd>
+				</dl>
+				<dl>
 					<dt><label for="range">Range</label></dt>
 					<dd><input id="range" name="range" type="range" min="1" max="100" value="5"></dd>
+				</dl>
+				<dl>
+					<dt><label for="image">Image</label></dt>
+					<dd><input id="image" name="image" type="image"></dd>
 				</dl>
 				<dl>
 					<dt><label for="password">Password</label></dt>
@@ -169,23 +178,26 @@
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script>
+/**
+ * HTML5 Compatibility Loader
+ */
 $(function(){
-	// function html(typeName) {
-	//     var input = document.createElement("input");
-	//     input.setAttribute("type", typeName);
-	//     var val = (input.type !== "text");
-	//     delete input;
-	//     return val;
-	// }
-	// var input_types = ['password','date','number'];
-	// for (var i = input_types.length - 1; i >= 0; i--) {
-	// 	// alert(input_types[i] + " is " + html(input_types[i]));
-	// };
+	var checkhtml = (function(window, undefined) {
+		return function() {
+			var input = document.createElement("input");
+			input.setAttribute("type", typeName);
+			var val = (input.type !== "text");
+			delete input;
+			return val;			
+		};
+	})();
 
-	// $('#number').change(function() {
-	// 	console.log($('#number').value);
-	// 	// $('label[for="number"]').
-	// })
+	var input_types = 'search tel url email date month week time datetime datetime-local number range color checkbox image file'.split(" ");
+
+
+	for (var i = input_types.length - 1; i >= 0; i--) {
+		console.log(input_types[i] + " is " + checkhtml(input_types[i]));
+	};
 });
 </script>
 </body>
