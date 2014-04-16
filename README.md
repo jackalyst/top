@@ -1,6 +1,20 @@
-Top [alpha]
-===========
+Top (Unstable)
+==============
 
-A complete HTML5 [high performance](http://developers.google.com/speed/pagespeed/insights/?url=top.kamris.com) front-end for websites aimed towards recent screen devices with tiered fallback for older browsers.
+Indends to be a complete [NIH](http://en.wikipedia.org/wiki/Not_invented_here) HTML5 [High Performance](http://developers.google.com/speed/pagespeed/insights/?url=top.kamris.com) front-end for developing todays websites compatible with yesterdays computational devices (IE6/IE7 anybody?).
 
-Right now it's best to look at index.html for an an outline on how to use this to its full advantage.
+- High Performance
+	- Tiny footprint
+	- Immediate paint-times
+	- Non-blocking CSS & Javascript
+	- JavaScript loaded on-demand
+- Tiered Compatibility
+	- Tier 0: IE6/7 will render layout and above the fold styling.
+	- Tier 1: IE8 will render layout as well as additional CSS.
+	- Tier 2: IE9+ and other modern browsers get the full experience.
+- Common Components
+	- jQuery 1.*
+	- normalise.css 4.x
+	- FontAwesome for iconography
+
+## High Performance

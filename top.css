@@ -1,4 +1,4 @@
-/*! top.css v0.2.0 | MIT License */
+/*! top.css unstable | MIT License */
 /**
  * Global box-sizing setting to border-box
  *
@@ -14,21 +14,20 @@
  *
  * While it is argued that '*' has a performance impact,
  * it is quite negligible for recent browsers, and so long
- * as it loads on older IE6/IE7 browsers that's fine.
+ * as it loads on older IE6/IE7 browsers where the impact may be,
+ * that's acceptable.
  *
  * See: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  */
 *, *:before, *:after {
-       -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box; /* <= Firefox 28 */
+    -webkit-box-sizing: border-box; /* <= Chrome 9, Safari 5 */
             box-sizing: border-box;
-           font-family: sans-serif;
 }
 
-/**
- * Margin and padding reset.
- * (To be set again by typography)
- */
+/* Margin and Padding Reset
+ ? Because we're setting typography below 
+ ! Careful, it's a reset */
 html, body, p, h1, h2, h3, h4, h5, h6 ul, ol, li {
     margin:0; padding:0;
 }
@@ -46,8 +45,8 @@ html, body, p, h1, h2, h3, h4, h5, h6 ul, ol, li {
  * direct descendant selectors aren't used.
  */
 /* IE6/7 Center */
-body { text-align: center; }
-body .r { text-align: left; }
+.ie6 body, .ie7 body { text-align: center; }
+.ie6 body .r, .ie7 body .r { text-align: left; }
 
 .r {
 	width:100%;
@@ -59,14 +58,18 @@ body .r { text-align: left; }
   width:100%;
   display: inline-block;
   vertical-align: top;
-  font-size:14px;
 }
- /* IE6, IE7 for Sub columns */
+
+ /* IE6, IE7
+  ? Row width weren't being set for child rows */
 .ie6 .r span .r,
 .ie7 .r span .r {
   width:100%;
 }
-/* IE6, IE7 */
+
+/* IE6, IE7 
+ ? Why? Inline-block creates a small space
+ ! This is a hack */
 .ie7 span, .ie6 span {
   margin-right:-1px;
 }
@@ -80,7 +83,7 @@ body .r { text-align: left; }
 .r .c1 { width: 8.33%; }
 .r .c2 { width: 16.66%; }
 .r .c3 { width: 25.0%; }
-.r .c4 { width: 33.33%; }
+.r .c4 { width: 33.32%; }
 .r .c5 { width: 41.7%; }
 .r .c6 { width: 50%; }
 .r .c7 { width: 58.3%; }
@@ -93,7 +96,7 @@ body .r { text-align: left; }
 .r .p1 { margin-left: 8.3%; }
 .r .p2 { margin-left: 16.7%; }
 .r .p3 { margin-left: 25.0%; }
-.r .p4 { margin-left: 33.3%; }
+.r .p4 { margin-left: 33.32%; }
 .r .p5 { margin-left: 41.7%; }
 .r .p6 { margin-left: 50.0%; }
 .r .p7 { margin-left: 58.3%; }
@@ -104,13 +107,6 @@ body .r { text-align: left; }
 
 /**
  * Typography
- *
- * Baseline is 22px.
- * 
- * We're using pixels for a few reasons.
- * 
- * 1. It's the standard measurement of screens, and follows
- * 
  */
 p, h2, h3, h4, h5, code, ul, ol, li, input, label, textarea {
   line-height: 22px;
@@ -131,7 +127,6 @@ ul ul, ul ol, ol ul, ol ol,
 p:last-child, ul:last-child, ol:last-child {
   margin-bottom:0px;
 }
-
 ul, ol {
   padding-left: 22px;
 }
@@ -141,19 +136,23 @@ dt {
 dd {
   margin:0;
 }
-
 input, textarea {
   border:1px solid #BBB;
   width:100%; padding:6px;
   font-size:14px; line-height: 22px;
 }
 
-/* Buttons */
+/* Buttons 
+ ? There are quite a few styles often attributed to buttons. This limits restyling.
+   To use, just give the buttons a certain background-color, that's it.
+ ! Careful about very dark colours <= #444 and very light colours */
 button,
 input[type="submit"] {
   color: #FFF;
-  border: 1px solid #783700;
   padding: 6px 10px;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.6) 100%);
-  background-color: #55D;
+  box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2),
+              inset 0px 0px 2px 2px rgba(255,255,255,0.1);
+  background: linear-gradient(to bottom, rgba(43,43,43,0.1) 0%, rgba(43,43,43,0.3) 100%);
+  background-color: #39F;
+  border:none;
 }
