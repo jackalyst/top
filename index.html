@@ -20,43 +20,48 @@ about what that means http://www.quirksmode.org/css/quirksmode.html
 <!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>top: A high performance css/js front-end</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>top: A high performance css/js front-end</title>
 	<style>
-	/* top */
-	*,:after,:before{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:sans-serif}body,h1,h2,h3,h4,h5,html,li,ol,p,ul{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.r{display:block;clear:both;width:100%}.r div{float:left;width:100%;overflow:hidden}.r:after{content:" ";height:0;display:block;clear:both}.r .c1{width:8.3%}.r .c2{width:16.7%}.r .c3{width:25%}.r .c4{width:33.3%}.r .c5{width:41.7%}.r .c6{width:50%}.r .c7{width:58.3%}.r .c8{width:66.7%}.r .c9{width:75%}.r .c10{width:83.3%}.r .c11{width:91.7%}.r .c12{width:100%}.r .p1{margin-left:8.3%}.r .p2{margin-left:16.7%}.r .p3{margin-left:25%}.r .p4{margin-left:33.3%}.r .p5{margin-left:41.7%}.r .p6{margin-left:50%}.r .p7{margin-left:58.3%}.r .p8{margin-left:66.7%}.r .p9{margin-left:75%}.r .p10{margin-left:83.3%}.r .p11{margin-left:91.7%}code,h2,h3,h4,h5,input,label,li,ol,p,textarea,ul{line-height:22px;font-size:14px}h1{font-size:28px;line-height:44px}h2{font-size:22px}h3{font-size:18px}h4{font-size:16px}h5{font-size:15px}form,ol,p,ul{margin-bottom:22px}ol ol,ol ul,ol:last-child,p:last-child,ul ol,ul ul,ul:last-child{margin-bottom:0}ol,ul{padding-left:22px}dt{font-weight:700}input,textarea{border:1px solid #BBB}
+	/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+	html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
-		/* Body type might be added to top later */
-		body {
-			color:#444;
-		}
+	/*! top.css unstable | MIT License */
+	*,:after,:before{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}body,h1,h2,h3,h4,h5,h6 ul,html,li,ol,p{margin:0;padding:0}.ie6 body,.ie7 body{text-align:center}.ie6 body .r,.ie7 body .r{text-align:left}.r{width:100%;margin:0 auto;font-size:0}.r span{width:100%;display:inline-block;vertical-align:top}.ie6 .r span .r,.ie7 .r span .r{width:100%}.ie6 span,.ie7 span{margin-right:-1px}.r .c1{width:8.33%}.r .c2{width:16.66%}.r .c3{width:25%}.r .c4{width:33.32%}.r .c5{width:41.7%}.r .c6{width:50%}.r .c7{width:58.3%}.r .c8{width:66.7%}.r .c9{width:75%}.r .c10{width:83.3%}.r .c11{width:91.7%}.r .c12{width:100%}code,h2,h3,h4,h5,input,label,li,ol,p,textarea,ul{line-height:22px;font-size:14px}h1{font-size:28px;line-height:44px}h2{font-size:22px}h3{font-size:18px}h4{font-size:16px}h5{font-size:15px}form,ol,p,ul{margin-bottom:22px}ol ol,ol ul,ol:last-child,p:last-child,ul ol,ul ul,ul:last-child{margin-bottom:0}ol,ul{padding-left:22px}dt{font-weight:700}dd{margin:0}input,textarea{border:1px solid #BBB;width:100%;padding:6px;font-size:14px;line-height:22px}button,input[type=submit]{color:#FFF;padding:6px 10px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.2),inset 0 0 2px 2px rgba(255,255,255,.1);background:linear-gradient(to bottom,rgba(43,43,43,.1)0,rgba(43,43,43,.3)100%);background-color:#39F;border:none}
 
-		h1, h2, h3, dt, label {
-			color:#111;
-		}
+	/* Body type might be added to top later */
+	body {
+		color:#444;
+	}
+	h1, h2, h3, dt, label {
+		color:#111;
+	}
+	a {
+		color:#44F;
+	}
 
-		/* Establish layout */
-		.r {
-			margin: 0 auto;
-			max-width: 600px;
-			_width: 600px;
-		}
-		.r .head h1 {
-			text-align: center;
-			font-size: 80px;
-			line-height: 100px;
-		}
-		.r .body {
-			padding-top:100px;
-		}
-		.r div {
-			padding-right: 5px;
-			padding-left:5px;
-		}
-		a {
-			color:#44F;
-		}
-		/* Anything that's above frame */
+	/* Layout */
+	.r {
+		margin: 0 auto;
+		max-width: 960px;
+	}
+	.ie6 .r, .ie7 .r {
+		width:960px;
+	}
+	.r > div {
+		padding:0 10px;
+	}
+
+	.r .head h1 {
+		text-align: center;
+		font-size: 80px;
+		line-height: 100px;
+	}
+	.r .body {
+		padding-top:100px;
+	}
+
+
 	</style>
 </head>
 <body>
@@ -69,44 +74,74 @@ about what that means http://www.quirksmode.org/css/quirksmode.html
 						<li><a href="#form">Foundation</a></li>
 						<li><a href="#lists">Typography</a></li>
 						<li><a href="#other">Forms &amp; Buttons</a></li>
-						<li><a href="#other">Tables</a></li>
-						<li><a href="#other">Menu's</a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
 		<div class="c9 body">
-			<h1>top [alpha]</h1>
-			<p>A complete HTML5 <a href="http://developers.google.com/speed/pagespeed/insights/?url=top.kamris.com">high performance</a> front-end for websites aimed towards recent screen devices with tiered fallback.</p>
-
+			<h1>What top is</h1>
+			<p>A complete HTML5 <a href="http://developers.google.com/speed/pagespeed/insights/?url=top.kamris.com">high performance</a> front-end for developing todays websites compatible with yesterdays devices.</p>
 
 			<h2>Features</h2>
 
 			<ul>
 				<li>
-					High Performant
+					High Performance
 					<ul>
-						<li>Small footprint. Under 1kb minified and gzipped.</li>
+						<li>Tiny footprint.</li>
 						<li>Immediate paint-times.</li>
-						<li>Non-blocking CSS &amp; Javascript</li>
+						<li>Non-blocking CSS &amp; Javascript.</li>
+						<li>jQuery Plugins onDemand</li>
 					</ul>
 				</li>
 				<li>
 					Tiered Compatibility
 					<ul>
-						<li>Tier 0: Enterprise browsers will still render layout in IE6/7 (Will be removed around ~version 3)</li>
-						<li>Tier 1: (optional) IE8 will render layout as well as functional elements. </li>
-						<li>Tier 2: IE9+ Gets the full experience.</li>
+						<li>Tier 0: IE6/7 will render layout.</li>
+						<li>Tier 1: IE8 will render layout as well as additional CSS. </li>
+						<li>Tier 2: IE9+ and other modern browsers get the full experience.</li>
+					</ul>
+				</li>
+
+				<li>
+					Common Components
+					<ul>
+						<li>jQuery 1.* with a set of plugins loaded only when needed</li>
+						<li>normalise.css 4.x</li>
+						<li>FontAwesome for iconography</li>
 					</ul>
 				</li>
 			</ul>
-
-			<h2>TODO</h2>
-			<ul>
-				<li>IE8+ Form elements for HTML5.</li>
-				<li>Load JS as needed.</li>
-			</ul>
-
+<table class="mytable">
+<thead>
+    <tr>
+        <td>Period</td>
+        <td>Full Board</td>
+        <td>Half Board</td>
+        <td>Bed and Breakfast</td>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>01/10/12 - 02/10/12</td>
+        <td>20 €</td>
+        <td>30 €</td>
+        <td>40 €</td>
+    </tr>
+    <tr>
+        <td>03/10/12 - 04/10/12</td>
+        <td>40 €</td>
+        <td>50 €</td>
+        <td>60 €</td>
+    </tr>
+    <tr>
+        <td>05/10/12 - 06/10/12</td>
+        <td>70 €</td>
+        <td>80 €</td>
+        <td>90 €</td>
+    </tr>
+</tbody>
+</table>
 			<h2 id="form">Forms</h2>
 			<form action="/">
 				<dl>
@@ -123,29 +158,65 @@ about what that means http://www.quirksmode.org/css/quirksmode.html
 	</div>
 </body>
 </html>
-<!--[if lt IE 9]>
-<script src="components/html5shiv/html5shiv.js"></script>
-<![endif]-->
-<!--[if (!IE)|(gte IE 9)]><!-->
+<!--[if (!IE)|(gte IE 8)]><!-->
 <noscript>
-	<link rel="stylesheet" href="okay/something.css">
-	<link rel="stylesheet" href="okay/something2.css">
+	<!--
+		CSS goes here
+
+		It's a good idea to keep layout displayed at the top of
+		the page that can be rendered in a wide range of browsers.
+
+		For things like fancy backgrounds, that can go here.
+	-->
 </noscript>
 <script type="text/javascript">
-// Autoload css files placed inside of the no script element.
-var noscript = document.getElementsByTagName('noscript')[0].innerHTML;
-var css = noscript.match(/[a-zA-Z0-9\/\:]+\.css/g);
+(function() {
+	var noscript = document.getElementsByTagName('noscript');
 
-for (var i = 0; i < css.length; i++) {
-	var head = document.getElementsByTagName("head")[0];
-	var link = document.createElement('link');
+	if(noscript.length > 0) {
+		noscript = noscript[noscript.length-1].innerHTML;
 
-    link.rel  = 'stylesheet';
-    link.type = 'text/css';
-    link.href = css[i];
-    link.media = 'all';
+		var css = noscript.match(/[a-zA-Z0-9\/\?\.]+\.css/g);
 
-    head.appendChild(link);
-};
+		if(css!==null) {
+			for (var i = 0; i < css.length; i++) {
+				var head = document.getElementsByTagName("head")[0];
+				var link = document.createElement('link');
+
+			    link.rel  = 'stylesheet';
+			    link.type = 'text/css';
+			    link.href = css[i];
+			    link.media = 'all';
+
+			    head.appendChild(link);
+			}
+		}
+	}
+})();
 </script>
 <!-- <![endif] -->
+
+<!--
+	jQuery
+
+	Q. Why jQuery and not extJS?
+	A. It's widely used.
+-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<!--
+	top.js includes:
+
+	- jQuery onDemand
+	-
+-->
+<script src="top.js"></script>
+<script>
+$(function() {
+	if($('table')[0]) { // Needed if it exists.
+		$('table').ReStable();
+	}
+});
+
+</script>
+<!--[if lt IE 9]><script src="components/html5shiv/html5shiv.js"></script><![endif]-->
