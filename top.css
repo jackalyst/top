@@ -144,3 +144,13 @@ input[type="submit"] {
   background-color: #39F;
   border:none;
 }
+/* Google Chrome Ends up padding the Colour preview */
+input[type="color"] {
+  padding:0;
+}
+input[disabled],
+button[disabled],
+textarea[disabled] {
+  cursor: not-allowed;
+  background-color: #EEE;
+}
