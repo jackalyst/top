@@ -1,0 +1,32 @@
+{
+  "name": "Top",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "Jack Matier",
+      "email": "self@jackalyst.com",
+      "homepage": "https://jackalyst.com"
+    }
+  ],
+  "description": "A lightweight framework to build amazing Web Applications and Websites",
+  "main":[
+      "dist/top.css",
+      "dist/top.js"
+  ],
+  "keywords": [],
+  "license": "Public Domain",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "src"
+  ],
+  "dependencies": {
+    "normalize.css": "3",
+    "minified": "2014",
+    "html5shiv": "3",
+    "font-awesome":"4"
+  }
+}
