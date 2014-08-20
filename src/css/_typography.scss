@@ -1,0 +1,36 @@
+/**
+ * Typography
+ */
+.r span, p, h2, h3, h4, h5, code, ul, ol, li, input, label, textarea {
+  line-height: 22px;
+  font-size: 14px;
+}
+
+h1 { font-size:28px; line-height: 44px; }
+h2 { font-size:22px; }
+h3 { font-size:18px; }
+h4 { font-size:16px; }
+h5 { font-size:15px; }
+
+p, ul, ol, form {
+  margin-bottom:22px;
+}
+
+ul ul, ul ol, ol ul, ol ol,
+p:last-child, ul:last-child, ol:last-child {
+  margin-bottom:0px;
+}
+ul, ol {
+  padding-left: 22px;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin:0;
+}
+input, textarea {
+  border:1px solid #BBB;
+  width:100%; padding:6px;
+  font-size:14px; line-height: 22px;
+}

@@ -2,16 +2,14 @@
 <!-- Quirks Mode IE6 and 7 for box model border-box -->
 <![endif]-->
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie6" lang="en"><![endif]-->
-<!--[if IE 7 ]><html class="ie7" lang="en"><![endif]-->
-<!--[if IE 8 ]><html class="ie8" lang="en"><![endif]-->
+<!--[if lt IE 7 ]><html class="ie6 legacy" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="ie7 legacy" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie8 legacy" lang="en"><![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Top test</title>
-	<link rel="stylesheet" href="../normalize.css">
-	<link rel="stylesheet" href="../top.css">
-	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 	<style>
 	/* Layout */
 	.r {
@@ -28,7 +26,7 @@
 <div class="r">
 	<span class="c3">
 		<ul class="menu">
-			<li><a href="">Some</a></li>
+			<li class="fa fa-twitter"><a href="">Some</a></li>
 			<li><a href="">Links</a></li>
 			<li><a href="">That</a></li>
 			<li><a href="">Lead</a></li>
@@ -36,9 +34,8 @@
 		</ul>
 	</span>
 	<span class="c9">
-		<h2>Top [alpha]</h2>
-		<p>Consider Top to be your complete simple to understand CSS framework. It doesn't use SASS, Stylus, or the latest Stylesheet language of the day because it makes some fundamental assumptions while not getting in the way of stylistic design choices.
-		</p>
+		<h2>Top [unstable]</h2>
+		<p>Intends to be a complete NIH HTML5 High Performance front-end for developing todays websites compatible with yesterdays computational devices (IE6/IE7 anybody?).</p>
 
 		<h3>Thoughts behind the Top Foundation</h3> 
 		<h4>1. box-sizing:border-box</h4>
@@ -132,13 +129,18 @@
 
 		<form>
 			<form action="/">
+			<!-- search tel url email month week datetime datetime-local number range color checkbox image file -->
 				<dl>
 					<dt><label for="username">Username</label></dt>
 					<dd><input id="username" name="username" type="text" placeholder="Username"></dd>
 				</dl>
 				<dl>
 					<dt><label for="date">Date</label></dt>
-					<dd><input id="date" name="date" type="date"></dd>
+					<dd><input id="date" name="date" type="date" disabled></dd>
+				</dl>
+				<dl>
+					<dt><label for="datetime">Date-time</label></dt>
+					<dd><input id="datetime" name="datetime" type="datetime"></dd>
 				</dl>
 				<dl>
 					<dt><label for="time">Time</label></dt>
@@ -157,8 +159,8 @@
 					<dd><input id="range" name="range" type="range" min="1" max="100" value="5"></dd>
 				</dl>
 				<dl>
-					<dt><label for="image">Image</label></dt>
-					<dd><input id="image" name="image" type="image"></dd>
+					<dt><label for="color">Colour</label></dt>
+					<dd><input id="color" name="color" type="color"></dd>
 				</dl>
 				<dl>
 					<dt><label for="password">Password</label></dt>
@@ -168,7 +170,7 @@
 					<dt><label for="biography">Biography</label></dt>
 					<dd><textarea name="biography" id="biography"></textarea></dd>
 				</dl>
-				<input type="submit">
+				<input type="submit" disabled>
 			</form>
 		</form>
 	</span>
@@ -176,6 +178,8 @@
 
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="../top.js"></script>
+
 <script>
 /**
  * HTML5 Compatibility Loader
