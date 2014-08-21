@@ -11,4 +11,5 @@ html,body,p,h1,h2,h3,h4,h5,h6 ul,ol,li{margin:0;padding:0}.ie6 body,.ie7 body{te
 .r .c12{width:100.0%}.r span,p,h2,h3,h4,h5,code,ul,ol,li,input,label,textarea{line-height:22px;font-size:14px}.r span,p,h2,h3,h4,h5,code,ul,ol,li,input,label,textarea{line-height:22px;font-size:14px}h1{font-size:28px;line-height:44px}h2{font-size:22px}
 h3{font-size:18px}h4{font-size:16px}h5{font-size:15px}p,ul,ol,form{margin-bottom:22px}ul ul,ul ol,ol ul,ol ol,p:last-child,ul:last-child,ol:last-child{margin-bottom:0}ul,ol{padding-left:22px}dt{font-weight:bold}dd{margin:0}input,textarea{border:1px solid #BBB;width:100%;padding:6px;font-size:14px;line-height:22px}
 button,input[type="submit"]{color:#FFF;padding:6px 10px;box-shadow:inset 0 0 0 1px rgba(0,0,0,0.2),inset 0 0 2px 2px rgba(255,255,255,0.1);background:linear-gradient(to bottom,rgba(43,43,43,0.1) 0,rgba(43,43,43,0.3) 100%);background-color:#39F;border:0}
-input[type="color"]{padding:0}input[disabled],button[disabled],textarea[disabled]{cursor:not-allowed;background-color:#EEE}
+input[type="color"]{padding:0}input[disabled],button[disabled],textarea[disabled]{cursor:not-allowed;background-color:#EEE}ul.top-menu--vertical{padding:0}ul.top-menu--vertical li{display:inline-block}ul.top-menu--horizontal{padding:0}
+ul.top-menu--horizontal li{display:inline-block}ul.top-menu--horizontal a{width:100%}

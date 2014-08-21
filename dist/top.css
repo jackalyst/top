@@ -458,7 +458,7 @@ html, body, p, h1, h2, h3, h4, h5, h6 ul, ol, li {
   width: 58.3%; }
 
 .r .c8 {
-  width: 66.7%; }
+  width: 66.59%; }
 
 .r .c9 {
   width: 75.0%; }
@@ -547,5 +547,17 @@ button[disabled],
 textarea[disabled] {
   cursor: not-allowed;
   background-color: #EEE; }
+
+ul.top-menu--vertical {
+  padding: 0; }
+  ul.top-menu--vertical li {
+    display: inline-block; }
+
+ul.top-menu--horizontal {
+  padding: 0; }
+  ul.top-menu--horizontal li {
+    display: inline-block; }
+  ul.top-menu--horizontal a {
+    width: 100%; }
 
 /*# sourceMappingURL=top.css.map */

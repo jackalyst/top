@@ -548,4 +548,16 @@ textarea[disabled] {
   cursor: not-allowed;
   background-color: #EEE; }
 
+ul.top-menu--vertical {
+  padding: 0; }
+  ul.top-menu--vertical li {
+    display: inline-block; }
+
+ul.top-menu--horizontal {
+  padding: 0; }
+  ul.top-menu--horizontal li {
+    display: inline-block; }
+  ul.top-menu--horizontal a {
+    width: 100%; }
+
 /*# sourceMappingURL=top.css.map */
