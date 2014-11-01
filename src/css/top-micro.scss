@@ -1,0 +1,20 @@
+/*! top.micro.css unstable | MIT License */
+*, *:before, *:after {
+       -moz-box-sizing: border-box; /* <= Firefox 28 */
+    -webkit-box-sizing: border-box; /* <= Chrome 9, Safari 5 */
+            box-sizing: border-box;
+}
+
+.r {
+	width:100%;
+	margin:0 auto;
+	font-size:0;
+}
+
+.r > span {
+	width:100%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+@import "_typography.scss";

@@ -1,0 +1,598 @@
+/*! top.css unstable | MIT License */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 45, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 57, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 78, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+[hidden], template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 98, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 169, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 173, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 232, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 256, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 278, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 293, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 303, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 312, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 335, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 347, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 371, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 425, /home/jack/github/kamris/top/top/bower_components/normalize.css/normalize.scss */
+td, th {
+  padding: 0; }
+
+/**
+ * Global box-sizing setting to border-box
+ *
+ * 'border-box' includes borders, margin and padding when
+ * calculating the width and height of elements.
+ *
+ * IE6 & IE7 get this box-sizing model by
+ * operating in cquirks mode by a comment
+ * above doctype declaration.
+ *
+ * The universal selector is used to maintain
+ * expected behavior across all elements.
+ *
+ * While it is argued that '*' has a performance impact,
+ * it is quite negligible for recent browsers, and so long
+ * as it loads on older IE6/IE7 browsers where the impact may be,
+ * that's acceptable.
+ * 
+ * See: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+/* line 21, /home/jack/github/kamris/top/top/src/css/_core.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  /* <= Firefox 28 */
+  -webkit-box-sizing: border-box;
+  /* <= Chrome 9, Safari 5 */
+  box-sizing: border-box; }
+
+/* Margin and Padding Reset
+ ? Because we're setting typography below 
+ ! Careful, it's a reset */
+/* line 30, /home/jack/github/kamris/top/top/src/css/_core.scss */
+html, body, p, h1, h2, h3, h4, h5, h6 ul, ol, li {
+  margin: 0;
+  padding: 0; }
+
+/**
+ * Layout
+ *
+ * Based on a 12 column system.
+ *
+ * 960px = 80px per column excluding padding
+ *
+ * Padding will need to be added later
+ *
+ * In order to achieve IE6 compatibility
+ * direct descendant selectors aren't used.
+ */
+/* IE6/7 Center */
+/* line 47, /home/jack/github/kamris/top/top/src/css/_core.scss */
+.ie6 body, .ie7 body {
+  text-align: center; }
+
+/* line 48, /home/jack/github/kamris/top/top/src/css/_core.scss */
+.ie6 body .r, .ie7 body .r {
+  text-align: left; }
+
+/* line 50, /home/jack/github/kamris/top/top/src/css/_core.scss */
+.r {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0; }
+
+/* line 56, /home/jack/github/kamris/top/top/src/css/_core.scss */
+.r span {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top; }
+
+/* IE6, IE7
+  ? Row width weren't being set for child rows */
+/* line 65, /home/jack/github/kamris/top/top/src/css/_core.scss */
+.ie6 .r span .r, .ie7 .r span .r {
+  width: 100%; }
+
+/* IE6, IE7 
+ ? Why? Inline-block creates a small space
+ ! This is a hack */
+/* line 72, /home/jack/github/kamris/top/top/src/css/_core.scss */
+.ie7 span, .ie6 span {
+  margin-right: -1px; }
+
+/**
+ * Flexible Columns
+ *  600/12 = 50 
+ *  960/12 = 80
+ * 1440/12 = 120 
+ */
+/* line 82, /home/jack/github/kamris/top/top/src/css/_core.scss */
+.r .c1 {
+  width: 8.33%; }
+
+/* line 83, /home/jack/github/kamris/top/top/src/css/_core.scss */
+.r .c2 {
+  width: 16.66%; }
+
+/* line 84, /home/jack/github/kamris/top/top/src/css/_core.scss */
+.r .c3 {
+  width: 25%; }
+
+/* line 85, /home/jack/github/kamris/top/top/src/css/_core.scss */
+.r .c4 {
+  width: 33.32%; }
+
+/* line 86, /home/jack/github/kamris/top/top/src/css/_core.scss */
+.r .c5 {
+  width: 41.7%; }
+
+/* line 87, /home/jack/github/kamris/top/top/src/css/_core.scss */
+.r .c6 {
+  width: 50%; }
+
+/* line 88, /home/jack/github/kamris/top/top/src/css/_core.scss */
+.r .c7 {
+  width: 58.3%; }
+
+/* line 89, /home/jack/github/kamris/top/top/src/css/_core.scss */
+.r .c8 {
+  width: 66.59%; }
+
+/* line 90, /home/jack/github/kamris/top/top/src/css/_core.scss */
+.r .c9 {
+  width: 75%; }
+
+/* line 91, /home/jack/github/kamris/top/top/src/css/_core.scss */
+.r .c10 {
+  width: 83.3%; }
+
+/* line 92, /home/jack/github/kamris/top/top/src/css/_core.scss */
+.r .c11 {
+  width: 91.7%; }
+
+/* line 93, /home/jack/github/kamris/top/top/src/css/_core.scss */
+.r .c12 {
+  width: 100%; }
+
+/**
+ * Typography
+ */
+/* line 4, /home/jack/github/kamris/top/top/src/css/_typography.scss */
+.r > span, p, h2, h3, h4, h5, code, ul, ol, li, input, label, textarea {
+  line-height: 22px;
+  font-size: 14px; }
+
+/* line 9, /home/jack/github/kamris/top/top/src/css/_typography.scss */
+h1 {
+  font-size: 28px;
+  line-height: 44px; }
+
+/* line 10, /home/jack/github/kamris/top/top/src/css/_typography.scss */
+h2 {
+  font-size: 22px; }
+
+/* line 11, /home/jack/github/kamris/top/top/src/css/_typography.scss */
+h3 {
+  font-size: 18px; }
+
+/* line 12, /home/jack/github/kamris/top/top/src/css/_typography.scss */
+h4 {
+  font-size: 16px; }
+
+/* line 13, /home/jack/github/kamris/top/top/src/css/_typography.scss */
+h5 {
+  font-size: 15px; }
+
+/* line 15, /home/jack/github/kamris/top/top/src/css/_typography.scss */
+p, ul, ol, form {
+  margin-bottom: 22px; }
+
+/* line 20, /home/jack/github/kamris/top/top/src/css/_typography.scss */
+ul ul, ul ol, ol ul, ol ol, p:last-child, ul:last-child, ol:last-child {
+  margin-bottom: 0px; }
+
+/* line 23, /home/jack/github/kamris/top/top/src/css/_typography.scss */
+ul, ol {
+  padding-left: 22px; }
+
+/* line 26, /home/jack/github/kamris/top/top/src/css/_typography.scss */
+dt {
+  font-weight: bold; }
+
+/* line 29, /home/jack/github/kamris/top/top/src/css/_typography.scss */
+dd {
+  margin: 0; }
+
+/* line 32, /home/jack/github/kamris/top/top/src/css/_typography.scss */
+input, textarea {
+  border: 1px solid #BBB;
+  width: 100%;
+  padding: 6px;
+  font-size: 14px;
+  line-height: 22px; }
+
+/* Buttons 
+ ? There are quite a few styles often attributed to buttons. This limits restyling.
+   To use, just give the buttons a certain background-color, that's it.
+ ! Careful about very dark colours <= #444 and very light colours */
+/* line 6, /home/jack/github/kamris/top/top/src/css/_buttons.scss */
+button, input[type="submit"] {
+  color: #FFF;
+  padding: 6px 10px;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to bottom, rgba(43, 43, 43, 0.1) 0%, rgba(43, 43, 43, 0.3) 100%);
+  background-color: #39F;
+  border: none; }
+
+/* Google Chrome Ends up padding the Colour preview */
+/* line 16, /home/jack/github/kamris/top/top/src/css/_buttons.scss */
+input[type="color"] {
+  padding: 0; }
+
+/* line 21, /home/jack/github/kamris/top/top/src/css/_buttons.scss */
+input[disabled], button[disabled], textarea[disabled] {
+  cursor: not-allowed;
+  background-color: #EEE; }
+
+/* line 1, /home/jack/github/kamris/top/top/src/css/_menu.scss */
+ul.top-menu--vertical {
+  padding: 0; }
+  /* line 3, /home/jack/github/kamris/top/top/src/css/_menu.scss */
+  ul.top-menu--vertical li {
+    display: inline-block; }
+
+/* line 7, /home/jack/github/kamris/top/top/src/css/_menu.scss */
+ul.top-menu--horizontal {
+  padding: 0; }
+  /* line 9, /home/jack/github/kamris/top/top/src/css/_menu.scss */
+  ul.top-menu--horizontal > li {
+    display: inline-block; }
+  /* line 12, /home/jack/github/kamris/top/top/src/css/_menu.scss */
+  ul.top-menu--horizontal a {
+    width: 100%; }
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL2Jvd2VyX2NvbXBvbmVudHMvbm9ybWFsaXplLmNzcy9fbm9ybWFsaXplLnNjc3MiLCJfY29yZS5zY3NzIiwiX3R5cG9ncmFwaHkuc2NzcyIsIl9idXR0b25zLnNjc3MiLCJfbWVudS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7O0FBUUE7RUFDRSxhQUFhOztFQUNiLHNCQUFzQjs7RUFDdEIsMEJBQTBCOzs7Ozs7O0FBTzVCO0VBQ0UsUUFBUTs7Ozs7Ozs7Ozs7QUFhVixTQUFTLE9BQU8sU0FBUyxZQUFZLFFBQVEsUUFBUSxRQUFRLFFBQVEsTUFBTSxNQUFNLEtBQUssU0FBUztFQWE3RixTQUFTOzs7Ozs7O0FBUVgsT0FBTyxRQUFRLFVBQVU7RUFJdkIsU0FBUzs7RUFDVCxnQkFBZ0I7Ozs7Ozs7O0FBUWxCLEtBQUssS0FBSztFQUNSLFNBQVM7RUFDVCxRQUFROzs7Ozs7O0FBUVYsVUFBVTtFQUVSLFNBQVM7Ozs7Ozs7O0FBVVg7RUFDRSxrQkFBa0I7Ozs7OztBQU9wQixDQUFDLFNBQVMsQ0FBQztFQUVULFNBQVM7Ozs7Ozs7O0FBVVgsSUFBSTtFQUNGLGVBQWU7Ozs7OztBQU9qQixHQUFHO0VBRUQsYUFBYTs7Ozs7O0FBT2Y7RUFDRSxZQUFZOzs7Ozs7O0FBUWQ7RUFDRSxXQUFXO0VBQ1gsUUFBUTs7Ozs7O0FBT1Y7RUFDRSxZQUFZO0VBQ1osT0FBTzs7Ozs7O0FBT1Q7RUFDRSxXQUFXOzs7Ozs7QUFPYixLQUFLO0VBRUgsV0FBVztFQUNYLGFBQWE7RUFDYixVQUFVO0VBQ1YsZ0JBQWdCOzs7QUFHbEI7RUFDRSxLQUFLOzs7QUFHUDtFQUNFLFFBQVE7Ozs7Ozs7O0FBVVY7RUFDRSxRQUFROzs7Ozs7QUFPVixHQUFHLEtBQUs7RUFDTixVQUFVOzs7Ozs7OztBQVVaO0VBQ0UsUUFBUTs7Ozs7O0FBT1Y7RUFDRSxpQkFBaUI7RUFDakIsWUFBWTtFQUNaLFFBQVE7Ozs7OztBQU9WO0VBQ0UsVUFBVTs7Ozs7O0FBT1osTUFBTSxLQUFLLEtBQUs7RUFJZCxhQUFhO0VBQ2IsV0FBVzs7Ozs7Ozs7Ozs7Ozs7O0FBa0JiLFFBQVEsT0FBTyxVQUFVLFFBQVE7RUFLL0IsT0FBTzs7RUFDUCxNQUFNOztFQUNOLFFBQVE7Ozs7Ozs7QUFPVjtFQUNFLFVBQVU7Ozs7Ozs7OztBQVVaLFFBQVE7RUFFTixnQkFBZ0I7Ozs7Ozs7Ozs7QUFXbEIsUUFBUSxLQUFLLEtBQUssaUJBQWlCLEtBQUssZ0JBQWdCLEtBQUs7RUFJM0Qsb0JBQW9COztFQUNwQixRQUFROzs7Ozs7O0FBT1YsTUFBTSxZQUFZLEtBQUssS0FBSztFQUUxQixRQUFROzs7Ozs7QUFPVixNQUFNLG9CQUFvQixLQUFLO0VBRTdCLFFBQVE7RUFDUixTQUFTOzs7Ozs7O0FBUVg7RUFDRSxhQUFhOzs7Ozs7Ozs7O0FBV2YsS0FBSyxtQkFBbUIsS0FBSztFQUUzQixZQUFZOztFQUNaLFNBQVM7Ozs7Ozs7OztBQVNYLEtBQUssZUFBZSw2QkFBNkIsS0FBSyxlQUFlO0VBRW5FLFFBQVE7Ozs7Ozs7O0FBU1YsS0FBSztFQUNILG9CQUFvQjs7RUFDcEIsaUJBQWlCO0VBQ2pCLG9CQUFvQjs7RUFDcEIsWUFBWTs7Ozs7Ozs7QUFTZCxLQUFLLGVBQWUsZ0NBQWdDLEtBQUssZUFBZTtFQUV0RSxvQkFBb0I7Ozs7OztBQU90QjtFQUNFLFFBQVE7RUFDUixRQUFRO0VBQ1IsU0FBUzs7Ozs7OztBQVFYO0VBQ0UsUUFBUTs7RUFDUixTQUFTOzs7Ozs7O0FBT1g7RUFDRSxVQUFVOzs7Ozs7O0FBUVo7RUFDRSxhQUFhOzs7Ozs7OztBQVVmO0VBQ0UsaUJBQWlCO0VBQ2pCLGdCQUFnQjs7O0FBR2xCLElBQUk7RUFFRixTQUFTOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQ3JaWCxHQUFHLENBQUMsU0FBUyxDQUFDO0VBQ1AsaUJBQWlCOztFQUNwQixvQkFBb0I7O0VBQ1osWUFBWTs7Ozs7O0FBTXhCLE1BQU0sTUFBTSxHQUFHLElBQUksSUFBSSxJQUFJLElBQUksSUFBSSxHQUFHLElBQUksSUFBSTtFQUMxQyxRQUFPO0VBQUcsU0FBUTs7Ozs7Ozs7Ozs7Ozs7OztBQWdCdEIsS0FBSyxNQUFNLEtBQUs7RUFBTyxZQUFZOzs7QUFDbkMsS0FBSyxLQUFLLElBQUksS0FBSyxLQUFLO0VBQUssWUFBWTs7O0FBRXpDO0VBQ0MsT0FBTTtFQUNMLFFBQU87RUFDUCxXQUFVOzs7QUFHWixHQUFHO0VBQ0QsT0FBTTtFQUNOLFNBQVM7RUFDVCxnQkFBZ0I7Ozs7O0FBS2xCLEtBQUssR0FBRyxLQUFLLElBQUksS0FBSyxHQUFHLEtBQUs7RUFFNUIsT0FBTTs7Ozs7O0FBTVIsS0FBSyxNQUFNLEtBQUs7RUFDZCxjQUFhOzs7Ozs7Ozs7QUFTZixHQUFHO0VBQU0sT0FBTzs7O0FBQ2hCLEdBQUc7RUFBTSxPQUFPOzs7QUFDaEIsR0FBRztFQUFNLE9BQU87OztBQUNoQixHQUFHO0VBQU0sT0FBTzs7O0FBQ2hCLEdBQUc7RUFBTSxPQUFPOzs7QUFDaEIsR0FBRztFQUFNLE9BQU87OztBQUNoQixHQUFHO0VBQU0sT0FBTzs7O0FBQ2hCLEdBQUc7RUFBTSxPQUFPOzs7QUFDaEIsR0FBRztFQUFNLE9BQU87OztBQUNoQixHQUFHO0VBQU8sT0FBTzs7O0FBQ2pCLEdBQUc7RUFBTyxPQUFPOzs7QUFDakIsR0FBRztFQUFPLE9BQU87Ozs7OztBQ3pGakIsS0FBSyxNQUFNLEdBQUcsSUFBSSxJQUFJLElBQUksSUFBSSxNQUFNLElBQUksSUFBSSxJQUFJLE9BQU8sT0FBTztFQUM1RCxhQUFhO0VBQ2IsV0FBVzs7O0FBR2I7RUFBSyxXQUFVO0VBQU0sYUFBYTs7O0FBQ2xDO0VBQUssV0FBVTs7O0FBQ2Y7RUFBSyxXQUFVOzs7QUFDZjtFQUFLLFdBQVU7OztBQUNmO0VBQUssV0FBVTs7O0FBRWYsR0FBRyxJQUFJLElBQUk7RUFDVCxlQUFjOzs7QUFHaEIsR0FBRyxJQUFJLEdBQUcsSUFBSSxHQUFHLElBQUksR0FBRyxJQUFJLENBQUMsYUFBYSxFQUFFLGFBQWEsRUFBRTtFQUV6RCxlQUFjOzs7QUFFaEIsSUFBSTtFQUNGLGNBQWM7OztBQUVoQjtFQUNFLGFBQWE7OztBQUVmO0VBQ0UsUUFBTzs7O0FBRVQsT0FBTztFQUNMLFFBQU87RUFDUCxPQUFNO0VBQU0sU0FBUTtFQUNwQixXQUFVO0VBQU0sYUFBYTs7Ozs7OztBQzlCL0IsUUFBUSxLQUFLO0VBRVgsT0FBTztFQUNQLFNBQVM7RUFDVCxZQUFnRDtFQUVoRCxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLFFBQU87Ozs7QUFHVCxLQUFLO0VBQ0gsU0FBUTs7O0FBRVYsS0FBSyxZQUFZLE1BQU0sWUFBWSxRQUFRO0VBR3pDLFFBQVE7RUFDUixrQkFBa0I7OztBQ3RCcEIsRUFBRTtFQUNELFNBQVE7O0VBQVQsRUFBRSxvQkFBb0I7SUFFcEIsU0FBUTs7O0FBR1YsRUFBRTtFQUNELFNBQVE7O0VBQVQsRUFBRSx3QkFBd0I7SUFFeEIsU0FBUzs7RUFDWCxFQUFFLHNCQUFzQjtJQUV0QixPQUFNIiwiZmlsZSI6InRvcC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiEgbm9ybWFsaXplLmNzcyB2My4wLjIgfCBNSVQgTGljZW5zZSB8IGdpdC5pby9ub3JtYWxpemUgKi9cblxuLyoqXG4gKiAxLiBTZXQgZGVmYXVsdCBmb250IGZhbWlseSB0byBzYW5zLXNlcmlmLlxuICogMi4gUHJldmVudCBpT1MgdGV4dCBzaXplIGFkanVzdCBhZnRlciBvcmllbnRhdGlvbiBjaGFuZ2UsIHdpdGhvdXQgZGlzYWJsaW5nXG4gKiAgICB1c2VyIHpvb20uXG4gKi9cblxuaHRtbCB7XG4gIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmOyAvKiAxICovXG4gIC1tcy10ZXh0LXNpemUtYWRqdXN0OiAxMDAlOyAvKiAyICovXG4gIC13ZWJraXQtdGV4dC1zaXplLWFkanVzdDogMTAwJTsgLyogMiAqL1xufVxuXG4vKipcbiAqIFJlbW92ZSBkZWZhdWx0IG1hcmdpbi5cbiAqL1xuXG5ib2R5IHtcbiAgbWFyZ2luOiAwO1xufVxuXG4vKiBIVE1MNSBkaXNwbGF5IGRlZmluaXRpb25zXG4gICA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAqL1xuXG4vKipcbiAqIENvcnJlY3QgYGJsb2NrYCBkaXNwbGF5IG5vdCBkZWZpbmVkIGZvciBhbnkgSFRNTDUgZWxlbWVudCBpbiBJRSA4LzkuXG4gKiBDb3JyZWN0IGBibG9ja2AgZGlzcGxheSBub3QgZGVmaW5lZCBmb3IgYGRldGFpbHNgIG9yIGBzdW1tYXJ5YCBpbiBJRSAxMC8xMVxuICogYW5kIEZpcmVmb3guXG4gKiBDb3JyZWN0IGBibG9ja2AgZGlzcGxheSBub3QgZGVmaW5lZCBmb3IgYG1haW5gIGluIElFIDExLlxuICovXG5cbmFydGljbGUsXG5hc2lkZSxcbmRldGFpbHMsXG5maWdjYXB0aW9uLFxuZmlndXJlLFxuZm9vdGVyLFxuaGVhZGVyLFxuaGdyb3VwLFxubWFpbixcbm1lbnUsXG5uYXYsXG5zZWN0aW9uLFxuc3VtbWFyeSB7XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuXG4vKipcbiAqIDEuIENvcnJlY3QgYGlubGluZS1ibG9ja2AgZGlzcGxheSBub3QgZGVmaW5lZCBpbiBJRSA4LzkuXG4gKiAyLiBOb3JtYWxpemUgdmVydGljYWwgYWxpZ25tZW50IG9mIGBwcm9ncmVzc2AgaW4gQ2hyb21lLCBGaXJlZm94LCBhbmQgT3BlcmEuXG4gKi9cblxuYXVkaW8sXG5jYW52YXMsXG5wcm9ncmVzcyxcbnZpZGVvIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrOyAvKiAxICovXG4gIHZlcnRpY2FsLWFsaWduOiBiYXNlbGluZTsgLyogMiAqL1xufVxuXG4vKipcbiAqIFByZXZlbnQgbW9kZXJuIGJyb3dzZXJzIGZyb20gZGlzcGxheWluZyBgYXVkaW9gIHdpdGhvdXQgY29udHJvbHMuXG4gKiBSZW1vdmUgZXhjZXNzIGhlaWdodCBpbiBpT1MgNSBkZXZpY2VzLlxuICovXG5cbmF1ZGlvOm5vdChbY29udHJvbHNdKSB7XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGhlaWdodDogMDtcbn1cblxuLyoqXG4gKiBBZGRyZXNzIGBbaGlkZGVuXWAgc3R5bGluZyBub3QgcHJlc2VudCBpbiBJRSA4LzkvMTAuXG4gKiBIaWRlIHRoZSBgdGVtcGxhdGVgIGVsZW1lbnQgaW4gSUUgOC85LzExLCBTYWZhcmksIGFuZCBGaXJlZm94IDwgMjIuXG4gKi9cblxuW2hpZGRlbl0sXG50ZW1wbGF0ZSB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5cbi8qIExpbmtzXG4gICA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAqL1xuXG4vKipcbiAqIFJlbW92ZSB0aGUgZ3JheSBiYWNrZ3JvdW5kIGNvbG9yIGZyb20gYWN0aXZlIGxpbmtzIGluIElFIDEwLlxuICovXG5cbmEge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbn1cblxuLyoqXG4gKiBJbXByb3ZlIHJlYWRhYmlsaXR5IHdoZW4gZm9jdXNlZCBhbmQgYWxzbyBtb3VzZSBob3ZlcmVkIGluIGFsbCBicm93c2Vycy5cbiAqL1xuXG5hOmFjdGl2ZSxcbmE6aG92ZXIge1xuICBvdXRsaW5lOiAwO1xufVxuXG4vKiBUZXh0LWxldmVsIHNlbWFudGljc1xuICAgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gKi9cblxuLyoqXG4gKiBBZGRyZXNzIHN0eWxpbmcgbm90IHByZXNlbnQgaW4gSUUgOC85LzEwLzExLCBTYWZhcmksIGFuZCBDaHJvbWUuXG4gKi9cblxuYWJiclt0aXRsZV0ge1xuICBib3JkZXItYm90dG9tOiAxcHggZG90dGVkO1xufVxuXG4vKipcbiAqIEFkZHJlc3Mgc3R5bGUgc2V0IHRvIGBib2xkZXJgIGluIEZpcmVmb3ggNCssIFNhZmFyaSwgYW5kIENocm9tZS5cbiAqL1xuXG5iLFxuc3Ryb25nIHtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG59XG5cbi8qKlxuICogQWRkcmVzcyBzdHlsaW5nIG5vdCBwcmVzZW50IGluIFNhZmFyaSBhbmQgQ2hyb21lLlxuICovXG5cbmRmbiB7XG4gIGZvbnQtc3R5bGU6IGl0YWxpYztcbn1cblxuLyoqXG4gKiBBZGRyZXNzIHZhcmlhYmxlIGBoMWAgZm9udC1zaXplIGFuZCBtYXJnaW4gd2l0aGluIGBzZWN0aW9uYCBhbmQgYGFydGljbGVgXG4gKiBjb250ZXh0cyBpbiBGaXJlZm94IDQrLCBTYWZhcmksIGFuZCBDaHJvbWUuXG4gKi9cblxuaDEge1xuICBmb250LXNpemU6IDJlbTtcbiAgbWFyZ2luOiAwLjY3ZW0gMDtcbn1cblxuLyoqXG4gKiBBZGRyZXNzIHN0eWxpbmcgbm90IHByZXNlbnQgaW4gSUUgOC85LlxuICovXG5cbm1hcmsge1xuICBiYWNrZ3JvdW5kOiAjZmYwO1xuICBjb2xvcjogIzAwMDtcbn1cblxuLyoqXG4gKiBBZGRyZXNzIGluY29uc2lzdGVudCBhbmQgdmFyaWFibGUgZm9udCBzaXplIGluIGFsbCBicm93c2Vycy5cbiAqL1xuXG5zbWFsbCB7XG4gIGZvbnQtc2l6ZTogODAlO1xufVxuXG4vKipcbiAqIFByZXZlbnQgYHN1YmAgYW5kIGBzdXBgIGFmZmVjdGluZyBgbGluZS1oZWlnaHRgIGluIGFsbCBicm93c2Vycy5cbiAqL1xuXG5zdWIsXG5zdXAge1xuICBmb250LXNpemU6IDc1JTtcbiAgbGluZS1oZWlnaHQ6IDA7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgdmVydGljYWwtYWxpZ246IGJhc2VsaW5lO1xufVxuXG5zdXAge1xuICB0b3A6IC0wLjVlbTtcbn1cblxuc3ViIHtcbiAgYm90dG9tOiAtMC4yNWVtO1xufVxuXG4vKiBFbWJlZGRlZCBjb250ZW50XG4gICA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAqL1xuXG4vKipcbiAqIFJlbW92ZSBib3JkZXIgd2hlbiBpbnNpZGUgYGFgIGVsZW1lbnQgaW4gSUUgOC85LzEwLlxuICovXG5cbmltZyB7XG4gIGJvcmRlcjogMDtcbn1cblxuLyoqXG4gKiBDb3JyZWN0IG92ZXJmbG93IG5vdCBoaWRkZW4gaW4gSUUgOS8xMC8xMS5cbiAqL1xuXG5zdmc6bm90KDpyb290KSB7XG4gIG92ZXJmbG93OiBoaWRkZW47XG59XG5cbi8qIEdyb3VwaW5nIGNvbnRlbnRcbiAgID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ICovXG5cbi8qKlxuICogQWRkcmVzcyBtYXJnaW4gbm90IHByZXNlbnQgaW4gSUUgOC85IGFuZCBTYWZhcmkuXG4gKi9cblxuZmlndXJlIHtcbiAgbWFyZ2luOiAxZW0gNDBweDtcbn1cblxuLyoqXG4gKiBBZGRyZXNzIGRpZmZlcmVuY2VzIGJldHdlZW4gRmlyZWZveCBhbmQgb3RoZXIgYnJvd3NlcnMuXG4gKi9cblxuaHIge1xuICAtbW96LWJveC1zaXppbmc6IGNvbnRlbnQtYm94O1xuICBib3gtc2l6aW5nOiBjb250ZW50LWJveDtcbiAgaGVpZ2h0OiAwO1xufVxuXG4vKipcbiAqIENvbnRhaW4gb3ZlcmZsb3cgaW4gYWxsIGJyb3dzZXJzLlxuICovXG5cbnByZSB7XG4gIG92ZXJmbG93OiBhdXRvO1xufVxuXG4vKipcbiAqIEFkZHJlc3Mgb2RkIGBlbWAtdW5pdCBmb250IHNpemUgcmVuZGVyaW5nIGluIGFsbCBicm93c2Vycy5cbiAqL1xuXG5jb2RlLFxua2JkLFxucHJlLFxuc2FtcCB7XG4gIGZvbnQtZmFtaWx5OiBtb25vc3BhY2UsIG1vbm9zcGFjZTtcbiAgZm9udC1zaXplOiAxZW07XG59XG5cbi8qIEZvcm1zXG4gICA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAqL1xuXG4vKipcbiAqIEtub3duIGxpbWl0YXRpb246IGJ5IGRlZmF1bHQsIENocm9tZSBhbmQgU2FmYXJpIG9uIE9TIFggYWxsb3cgdmVyeSBsaW1pdGVkXG4gKiBzdHlsaW5nIG9mIGBzZWxlY3RgLCB1bmxlc3MgYSBgYm9yZGVyYCBwcm9wZXJ0eSBpcyBzZXQuXG4gKi9cblxuLyoqXG4gKiAxLiBDb3JyZWN0IGNvbG9yIG5vdCBiZWluZyBpbmhlcml0ZWQuXG4gKiAgICBLbm93biBpc3N1ZTogYWZmZWN0cyBjb2xvciBvZiBkaXNhYmxlZCBlbGVtZW50cy5cbiAqIDIuIENvcnJlY3QgZm9udCBwcm9wZXJ0aWVzIG5vdCBiZWluZyBpbmhlcml0ZWQuXG4gKiAzLiBBZGRyZXNzIG1hcmdpbnMgc2V0IGRpZmZlcmVudGx5IGluIEZpcmVmb3ggNCssIFNhZmFyaSwgYW5kIENocm9tZS5cbiAqL1xuXG5idXR0b24sXG5pbnB1dCxcbm9wdGdyb3VwLFxuc2VsZWN0LFxudGV4dGFyZWEge1xuICBjb2xvcjogaW5oZXJpdDsgLyogMSAqL1xuICBmb250OiBpbmhlcml0OyAvKiAyICovXG4gIG1hcmdpbjogMDsgLyogMyAqL1xufVxuXG4vKipcbiAqIEFkZHJlc3MgYG92ZXJmbG93YCBzZXQgdG8gYGhpZGRlbmAgaW4gSUUgOC85LzEwLzExLlxuICovXG5cbmJ1dHRvbiB7XG4gIG92ZXJmbG93OiB2aXNpYmxlO1xufVxuXG4vKipcbiAqIEFkZHJlc3MgaW5jb25zaXN0ZW50IGB0ZXh0LXRyYW5zZm9ybWAgaW5oZXJpdGFuY2UgZm9yIGBidXR0b25gIGFuZCBgc2VsZWN0YC5cbiAqIEFsbCBvdGhlciBmb3JtIGNvbnRyb2wgZWxlbWVudHMgZG8gbm90IGluaGVyaXQgYHRleHQtdHJhbnNmb3JtYCB2YWx1ZXMuXG4gKiBDb3JyZWN0IGBidXR0b25gIHN0eWxlIGluaGVyaXRhbmNlIGluIEZpcmVmb3gsIElFIDgvOS8xMC8xMSwgYW5kIE9wZXJhLlxuICogQ29ycmVjdCBgc2VsZWN0YCBzdHlsZSBpbmhlcml0YW5jZSBpbiBGaXJlZm94LlxuICovXG5cbmJ1dHRvbixcbnNlbGVjdCB7XG4gIHRleHQtdHJhbnNmb3JtOiBub25lO1xufVxuXG4vKipcbiAqIDEuIEF2b2lkIHRoZSBXZWJLaXQgYnVnIGluIEFuZHJvaWQgNC4wLiogd2hlcmUgKDIpIGRlc3Ryb3lzIG5hdGl2ZSBgYXVkaW9gXG4gKiAgICBhbmQgYHZpZGVvYCBjb250cm9scy5cbiAqIDIuIENvcnJlY3QgaW5hYmlsaXR5IHRvIHN0eWxlIGNsaWNrYWJsZSBgaW5wdXRgIHR5cGVzIGluIGlPUy5cbiAqIDMuIEltcHJvdmUgdXNhYmlsaXR5IGFuZCBjb25zaXN0ZW5jeSBvZiBjdXJzb3Igc3R5bGUgYmV0d2VlbiBpbWFnZS10eXBlXG4gKiAgICBgaW5wdXRgIGFuZCBvdGhlcnMuXG4gKi9cblxuYnV0dG9uLFxuaHRtbCBpbnB1dFt0eXBlPVwiYnV0dG9uXCJdLCAvKiAxICovXG5pbnB1dFt0eXBlPVwicmVzZXRcIl0sXG5pbnB1dFt0eXBlPVwic3VibWl0XCJdIHtcbiAgLXdlYmtpdC1hcHBlYXJhbmNlOiBidXR0b247IC8qIDIgKi9cbiAgY3Vyc29yOiBwb2ludGVyOyAvKiAzICovXG59XG5cbi8qKlxuICogUmUtc2V0IGRlZmF1bHQgY3Vyc29yIGZvciBkaXNhYmxlZCBlbGVtZW50cy5cbiAqL1xuXG5idXR0b25bZGlzYWJsZWRdLFxuaHRtbCBpbnB1dFtkaXNhYmxlZF0ge1xuICBjdXJzb3I6IGRlZmF1bHQ7XG59XG5cbi8qKlxuICogUmVtb3ZlIGlubmVyIHBhZGRpbmcgYW5kIGJvcmRlciBpbiBGaXJlZm94IDQrLlxuICovXG5cbmJ1dHRvbjo6LW1vei1mb2N1cy1pbm5lcixcbmlucHV0OjotbW96LWZvY3VzLWlubmVyIHtcbiAgYm9yZGVyOiAwO1xuICBwYWRkaW5nOiAwO1xufVxuXG4vKipcbiAqIEFkZHJlc3MgRmlyZWZveCA0KyBzZXR0aW5nIGBsaW5lLWhlaWdodGAgb24gYGlucHV0YCB1c2luZyBgIWltcG9ydGFudGAgaW5cbiAqIHRoZSBVQSBzdHlsZXNoZWV0LlxuICovXG5cbmlucHV0IHtcbiAgbGluZS1oZWlnaHQ6IG5vcm1hbDtcbn1cblxuLyoqXG4gKiBJdCdzIHJlY29tbWVuZGVkIHRoYXQgeW91IGRvbid0IGF0dGVtcHQgdG8gc3R5bGUgdGhlc2UgZWxlbWVudHMuXG4gKiBGaXJlZm94J3MgaW1wbGVtZW50YXRpb24gZG9lc24ndCByZXNwZWN0IGJveC1zaXppbmcsIHBhZGRpbmcsIG9yIHdpZHRoLlxuICpcbiAqIDEuIEFkZHJlc3MgYm94IHNpemluZyBzZXQgdG8gYGNvbnRlbnQtYm94YCBpbiBJRSA4LzkvMTAuXG4gKiAyLiBSZW1vdmUgZXhjZXNzIHBhZGRpbmcgaW4gSUUgOC85LzEwLlxuICovXG5cbmlucHV0W3R5cGU9XCJjaGVja2JveFwiXSxcbmlucHV0W3R5cGU9XCJyYWRpb1wiXSB7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7IC8qIDEgKi9cbiAgcGFkZGluZzogMDsgLyogMiAqL1xufVxuXG4vKipcbiAqIEZpeCB0aGUgY3Vyc29yIHN0eWxlIGZvciBDaHJvbWUncyBpbmNyZW1lbnQvZGVjcmVtZW50IGJ1dHRvbnMuIEZvciBjZXJ0YWluXG4gKiBgZm9udC1zaXplYCB2YWx1ZXMgb2YgdGhlIGBpbnB1dGAsIGl0IGNhdXNlcyB0aGUgY3Vyc29yIHN0eWxlIG9mIHRoZVxuICogZGVjcmVtZW50IGJ1dHRvbiB0byBjaGFuZ2UgZnJvbSBgZGVmYXVsdGAgdG8gYHRleHRgLlxuICovXG5cbmlucHV0W3R5cGU9XCJudW1iZXJcIl06Oi13ZWJraXQtaW5uZXItc3Bpbi1idXR0b24sXG5pbnB1dFt0eXBlPVwibnVtYmVyXCJdOjotd2Via2l0LW91dGVyLXNwaW4tYnV0dG9uIHtcbiAgaGVpZ2h0OiBhdXRvO1xufVxuXG4vKipcbiAqIDEuIEFkZHJlc3MgYGFwcGVhcmFuY2VgIHNldCB0byBgc2VhcmNoZmllbGRgIGluIFNhZmFyaSBhbmQgQ2hyb21lLlxuICogMi4gQWRkcmVzcyBgYm94LXNpemluZ2Agc2V0IHRvIGBib3JkZXItYm94YCBpbiBTYWZhcmkgYW5kIENocm9tZVxuICogICAgKGluY2x1ZGUgYC1tb3pgIHRvIGZ1dHVyZS1wcm9vZikuXG4gKi9cblxuaW5wdXRbdHlwZT1cInNlYXJjaFwiXSB7XG4gIC13ZWJraXQtYXBwZWFyYW5jZTogdGV4dGZpZWxkOyAvKiAxICovXG4gIC1tb3otYm94LXNpemluZzogY29udGVudC1ib3g7XG4gIC13ZWJraXQtYm94LXNpemluZzogY29udGVudC1ib3g7IC8qIDIgKi9cbiAgYm94LXNpemluZzogY29udGVudC1ib3g7XG59XG5cbi8qKlxuICogUmVtb3ZlIGlubmVyIHBhZGRpbmcgYW5kIHNlYXJjaCBjYW5jZWwgYnV0dG9uIGluIFNhZmFyaSBhbmQgQ2hyb21lIG9uIE9TIFguXG4gKiBTYWZhcmkgKGJ1dCBub3QgQ2hyb21lKSBjbGlwcyB0aGUgY2FuY2VsIGJ1dHRvbiB3aGVuIHRoZSBzZWFyY2ggaW5wdXQgaGFzXG4gKiBwYWRkaW5nIChhbmQgYHRleHRmaWVsZGAgYXBwZWFyYW5jZSkuXG4gKi9cblxuaW5wdXRbdHlwZT1cInNlYXJjaFwiXTo6LXdlYmtpdC1zZWFyY2gtY2FuY2VsLWJ1dHRvbixcbmlucHV0W3R5cGU9XCJzZWFyY2hcIl06Oi13ZWJraXQtc2VhcmNoLWRlY29yYXRpb24ge1xuICAtd2Via2l0LWFwcGVhcmFuY2U6IG5vbmU7XG59XG5cbi8qKlxuICogRGVmaW5lIGNvbnNpc3RlbnQgYm9yZGVyLCBtYXJnaW4sIGFuZCBwYWRkaW5nLlxuICovXG5cbmZpZWxkc2V0IHtcbiAgYm9yZGVyOiAxcHggc29saWQgI2MwYzBjMDtcbiAgbWFyZ2luOiAwIDJweDtcbiAgcGFkZGluZzogMC4zNWVtIDAuNjI1ZW0gMC43NWVtO1xufVxuXG4vKipcbiAqIDEuIENvcnJlY3QgYGNvbG9yYCBub3QgYmVpbmcgaW5oZXJpdGVkIGluIElFIDgvOS8xMC8xMS5cbiAqIDIuIFJlbW92ZSBwYWRkaW5nIHNvIHBlb3BsZSBhcmVuJ3QgY2F1Z2h0IG91dCBpZiB0aGV5IHplcm8gb3V0IGZpZWxkc2V0cy5cbiAqL1xuXG5sZWdlbmQge1xuICBib3JkZXI6IDA7IC8qIDEgKi9cbiAgcGFkZGluZzogMDsgLyogMiAqL1xufVxuXG4vKipcbiAqIFJlbW92ZSBkZWZhdWx0IHZlcnRpY2FsIHNjcm9sbGJhciBpbiBJRSA4LzkvMTAvMTEuXG4gKi9cblxudGV4dGFyZWEge1xuICBvdmVyZmxvdzogYXV0bztcbn1cblxuLyoqXG4gKiBEb24ndCBpbmhlcml0IHRoZSBgZm9udC13ZWlnaHRgIChhcHBsaWVkIGJ5IGEgcnVsZSBhYm92ZSkuXG4gKiBOT1RFOiB0aGUgZGVmYXVsdCBjYW5ub3Qgc2FmZWx5IGJlIGNoYW5nZWQgaW4gQ2hyb21lIGFuZCBTYWZhcmkgb24gT1MgWC5cbiAqL1xuXG5vcHRncm91cCB7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xufVxuXG4vKiBUYWJsZXNcbiAgID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ICovXG5cbi8qKlxuICogUmVtb3ZlIG1vc3Qgc3BhY2luZyBiZXR3ZWVuIHRhYmxlIGNlbGxzLlxuICovXG5cbnRhYmxlIHtcbiAgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTtcbiAgYm9yZGVyLXNwYWNpbmc6IDA7XG59XG5cbnRkLFxudGgge1xuICBwYWRkaW5nOiAwO1xufVxuIiwiLyoqXG4gKiBHbG9iYWwgYm94LXNpemluZyBzZXR0aW5nIHRvIGJvcmRlci1ib3hcbiAqXG4gKiAnYm9yZGVyLWJveCcgaW5jbHVkZXMgYm9yZGVycywgbWFyZ2luIGFuZCBwYWRkaW5nIHdoZW5cbiAqIGNhbGN1bGF0aW5nIHRoZSB3aWR0aCBhbmQgaGVpZ2h0IG9mIGVsZW1lbnRzLlxuICpcbiAqIElFNiAmIElFNyBnZXQgdGhpcyBib3gtc2l6aW5nIG1vZGVsIGJ5XG4gKiBvcGVyYXRpbmcgaW4gY3F1aXJrcyBtb2RlIGJ5IGEgY29tbWVudFxuICogYWJvdmUgZG9jdHlwZSBkZWNsYXJhdGlvbi5cbiAqXG4gKiBUaGUgdW5pdmVyc2FsIHNlbGVjdG9yIGlzIHVzZWQgdG8gbWFpbnRhaW5cbiAqIGV4cGVjdGVkIGJlaGF2aW9yIGFjcm9zcyBhbGwgZWxlbWVudHMuXG4gKlxuICogV2hpbGUgaXQgaXMgYXJndWVkIHRoYXQgJyonIGhhcyBhIHBlcmZvcm1hbmNlIGltcGFjdCxcbiAqIGl0IGlzIHF1aXRlIG5lZ2xpZ2libGUgZm9yIHJlY2VudCBicm93c2VycywgYW5kIHNvIGxvbmdcbiAqIGFzIGl0IGxvYWRzIG9uIG9sZGVyIElFNi9JRTcgYnJvd3NlcnMgd2hlcmUgdGhlIGltcGFjdCBtYXkgYmUsXG4gKiB0aGF0J3MgYWNjZXB0YWJsZS5cbiAqIFxuICogU2VlOiBodHRwOi8vd3d3LnBhdWxpcmlzaC5jb20vMjAxMi9ib3gtc2l6aW5nLWJvcmRlci1ib3gtZnR3L1xuICovXG4qLCAqOmJlZm9yZSwgKjphZnRlciB7XG4gICAgICAgLW1vei1ib3gtc2l6aW5nOiBib3JkZXItYm94OyAvKiA8PSBGaXJlZm94IDI4ICovXG4gICAgLXdlYmtpdC1ib3gtc2l6aW5nOiBib3JkZXItYm94OyAvKiA8PSBDaHJvbWUgOSwgU2FmYXJpIDUgKi9cbiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG59XG5cbi8qIE1hcmdpbiBhbmQgUGFkZGluZyBSZXNldFxuID8gQmVjYXVzZSB3ZSdyZSBzZXR0aW5nIHR5cG9ncmFwaHkgYmVsb3cgXG4gISBDYXJlZnVsLCBpdCdzIGEgcmVzZXQgKi9cbmh0bWwsIGJvZHksIHAsIGgxLCBoMiwgaDMsIGg0LCBoNSwgaDYgdWwsIG9sLCBsaSB7XG4gICAgbWFyZ2luOjA7IHBhZGRpbmc6MDtcbn1cblxuLyoqXG4gKiBMYXlvdXRcbiAqXG4gKiBCYXNlZCBvbiBhIDEyIGNvbHVtbiBzeXN0ZW0uXG4gKlxuICogOTYwcHggPSA4MHB4IHBlciBjb2x1bW4gZXhjbHVkaW5nIHBhZGRpbmdcbiAqXG4gKiBQYWRkaW5nIHdpbGwgbmVlZCB0byBiZSBhZGRlZCBsYXRlclxuICpcbiAqIEluIG9yZGVyIHRvIGFjaGlldmUgSUU2IGNvbXBhdGliaWxpdHlcbiAqIGRpcmVjdCBkZXNjZW5kYW50IHNlbGVjdG9ycyBhcmVuJ3QgdXNlZC5cbiAqL1xuLyogSUU2LzcgQ2VudGVyICovXG4uaWU2IGJvZHksIC5pZTcgYm9keSB7IHRleHQtYWxpZ246IGNlbnRlcjsgfVxuLmllNiBib2R5IC5yLCAuaWU3IGJvZHkgLnIgeyB0ZXh0LWFsaWduOiBsZWZ0OyB9XG5cbi5yIHtcblx0d2lkdGg6MTAwJTtcbiAgbWFyZ2luOjAgYXV0bztcbiAgZm9udC1zaXplOjA7XG59XG5cbi5yIHNwYW4ge1xuICB3aWR0aDoxMDAlO1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIHZlcnRpY2FsLWFsaWduOiB0b3A7XG59XG5cbiAvKiBJRTYsIElFN1xuICA/IFJvdyB3aWR0aCB3ZXJlbid0IGJlaW5nIHNldCBmb3IgY2hpbGQgcm93cyAqL1xuLmllNiAuciBzcGFuIC5yLFxuLmllNyAuciBzcGFuIC5yIHtcbiAgd2lkdGg6MTAwJTtcbn1cblxuLyogSUU2LCBJRTcgXG4gPyBXaHk/IElubGluZS1ibG9jayBjcmVhdGVzIGEgc21hbGwgc3BhY2VcbiAhIFRoaXMgaXMgYSBoYWNrICovXG4uaWU3IHNwYW4sIC5pZTYgc3BhbiB7XG4gIG1hcmdpbi1yaWdodDotMXB4O1xufVxuXG4vKipcbiAqIEZsZXhpYmxlIENvbHVtbnNcbiAqICA2MDAvMTIgPSA1MCBcbiAqICA5NjAvMTIgPSA4MFxuICogMTQ0MC8xMiA9IDEyMCBcbiAqL1xuLnIgLmMxIHsgd2lkdGg6IDguMzMlOyB9XG4uciAuYzIgeyB3aWR0aDogMTYuNjYlOyB9XG4uciAuYzMgeyB3aWR0aDogMjUuMCU7IH1cbi5yIC5jNCB7IHdpZHRoOiAzMy4zMiU7IH1cbi5yIC5jNSB7IHdpZHRoOiA0MS43JTsgfVxuLnIgLmM2IHsgd2lkdGg6IDUwJTsgfVxuLnIgLmM3IHsgd2lkdGg6IDU4LjMlOyB9XG4uciAuYzggeyB3aWR0aDogNjYuNTklOyB9XG4uciAuYzkgeyB3aWR0aDogNzUuMCU7IH1cbi5yIC5jMTAgeyB3aWR0aDogODMuMyU7IH1cbi5yIC5jMTEgeyB3aWR0aDogOTEuNyU7IH1cbi5yIC5jMTIgeyB3aWR0aDogMTAwLjAlOyB9IiwiLyoqXG4gKiBUeXBvZ3JhcGh5XG4gKi9cbi5yID4gc3BhbiwgcCwgaDIsIGgzLCBoNCwgaDUsIGNvZGUsIHVsLCBvbCwgbGksIGlucHV0LCBsYWJlbCwgdGV4dGFyZWEge1xuICBsaW5lLWhlaWdodDogMjJweDtcbiAgZm9udC1zaXplOiAxNHB4O1xufVxuXG5oMSB7IGZvbnQtc2l6ZToyOHB4OyBsaW5lLWhlaWdodDogNDRweDsgfVxuaDIgeyBmb250LXNpemU6MjJweDsgfVxuaDMgeyBmb250LXNpemU6MThweDsgfVxuaDQgeyBmb250LXNpemU6MTZweDsgfVxuaDUgeyBmb250LXNpemU6MTVweDsgfVxuXG5wLCB1bCwgb2wsIGZvcm0ge1xuICBtYXJnaW4tYm90dG9tOjIycHg7XG59XG5cbnVsIHVsLCB1bCBvbCwgb2wgdWwsIG9sIG9sLFxucDpsYXN0LWNoaWxkLCB1bDpsYXN0LWNoaWxkLCBvbDpsYXN0LWNoaWxkIHtcbiAgbWFyZ2luLWJvdHRvbTowcHg7XG59XG51bCwgb2wge1xuICBwYWRkaW5nLWxlZnQ6IDIycHg7XG59XG5kdCB7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xufVxuZGQge1xuICBtYXJnaW46MDtcbn1cbmlucHV0LCB0ZXh0YXJlYSB7XG4gIGJvcmRlcjoxcHggc29saWQgI0JCQjtcbiAgd2lkdGg6MTAwJTsgcGFkZGluZzo2cHg7XG4gIGZvbnQtc2l6ZToxNHB4OyBsaW5lLWhlaWdodDogMjJweDtcbn0iLCIvKiBCdXR0b25zIFxuID8gVGhlcmUgYXJlIHF1aXRlIGEgZmV3IHN0eWxlcyBvZnRlbiBhdHRyaWJ1dGVkIHRvIGJ1dHRvbnMuIFRoaXMgbGltaXRzIHJlc3R5bGluZy5cbiAgIFRvIHVzZSwganVzdCBnaXZlIHRoZSBidXR0b25zIGEgY2VydGFpbiBiYWNrZ3JvdW5kLWNvbG9yLCB0aGF0J3MgaXQuXG4gISBDYXJlZnVsIGFib3V0IHZlcnkgZGFyayBjb2xvdXJzIDw9ICM0NDQgYW5kIHZlcnkgbGlnaHQgY29sb3VycyAqL1xuYnV0dG9uLFxuaW5wdXRbdHlwZT1cInN1Ym1pdFwiXSB7XG4gIGNvbG9yOiAjRkZGO1xuICBwYWRkaW5nOiA2cHggMTBweDtcbiAgYm94LXNoYWRvdzogaW5zZXQgMHB4IDBweCAwcHggMXB4IHJnYmEoMCwwLDAsMC4yKSxcbiAgICAgICAgICAgICAgaW5zZXQgMHB4IDBweCAycHggMnB4IHJnYmEoMjU1LDI1NSwyNTUsMC4xKTtcbiAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KHRvIGJvdHRvbSwgcmdiYSg0Myw0Myw0MywwLjEpIDAlLCByZ2JhKDQzLDQzLDQzLDAuMykgMTAwJSk7XG4gIGJhY2tncm91bmQtY29sb3I6ICMzOUY7XG4gIGJvcmRlcjpub25lO1xufVxuLyogR29vZ2xlIENocm9tZSBFbmRzIHVwIHBhZGRpbmcgdGhlIENvbG91ciBwcmV2aWV3ICovXG5pbnB1dFt0eXBlPVwiY29sb3JcIl0ge1xuICBwYWRkaW5nOjA7XG59XG5pbnB1dFtkaXNhYmxlZF0sXG5idXR0b25bZGlzYWJsZWRdLFxudGV4dGFyZWFbZGlzYWJsZWRdIHtcbiAgY3Vyc29yOiBub3QtYWxsb3dlZDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI0VFRTtcbn0iLCJ1bC50b3AtbWVudS0tdmVydGljYWwge1xuXHRwYWRkaW5nOjA7XG5cdGxpIHtcblx0XHRkaXNwbGF5OmlubGluZS1ibG9jaztcblx0fVxufVxudWwudG9wLW1lbnUtLWhvcml6b250YWwge1xuXHRwYWRkaW5nOjA7XG5cdCY+IGxpIHtcblx0XHRkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG5cdH1cblx0YSB7XG5cdFx0d2lkdGg6MTAwJTtcblx0fVxuXG59Il0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9 */

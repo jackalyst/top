@@ -6,7 +6,7 @@ ul.top-menu--vertical {
 }
 ul.top-menu--horizontal {
 	padding:0;
-	li {
+	&> li {
 		display: inline-block;
 	}
 	a {
