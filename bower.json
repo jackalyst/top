@@ -1,6 +1,6 @@
 {
-  "name": "Top",
-  "version": "0.0.1",
+  "name": "top",
+  "version": "0.0.2",
   "authors": [
     {
       "name": "Jack Matier",
@@ -10,8 +10,9 @@
   ],
   "description": "A lightweight framework to build amazing Web Applications and Websites",
   "main":[
-      "dist/top.css",
-      "dist/top.js"
+      "dist/css/top.css",
+      "dist/css/top-micro.css",
+      "dist/js/top.js"
   ],
   "keywords": [],
   "license": "Public Domain",
@@ -25,7 +26,7 @@
   ],
   "dependencies": {
     "normalize.css": "3",
-    "minified": "2014",
+    "jquery": "1.*",
     "html5shiv": "3",
     "font-awesome":"4"
   }
