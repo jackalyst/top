@@ -1,7 +1,11 @@
+/**
+ * topio.min.js
+ *
+ * Replacing the top with information much in the same way that modernizr does feature detection.
+ */
 define(
 	'topio.min',
-	['jquery'],
-	function($) {
+	function() {
 
 			     var element = document.documentElement;
 		var scroll_direction = 'down';
@@ -10,37 +14,38 @@ define(
 		// Expand the document
 		element.className = element.className.replace(
 			/\btopio\b/,
-			'topio-scrolltop--true topio-scrolldir--none topio-domloaded'
+			'topio-scrolltop--true topio-scrolldir--none topio-domcontentloaded'
 		);
 
-		// Scroll Direction
-		$(document).on('scroll', element, function() {
-			var new_scroll_position = $(document).scrollTop();
+		window.addEventListener('load', function(e) {
+			element.className += ' topio-windowloaded';
+		});
 
-			if(new_scroll_position<100) {
-				scroll_top='true';
-			} else {
-				scroll_top='false';
-			}
+
+		window.addEventListener("scroll", function(e) {
+			var supportPageOffset = window.pageXOffset !== undefined;
+			var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+
+			var scrollpos = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
+
+			var scrolltop = (scrollpos < 100)           ? 'true' : 'false';
+			var scrolldir = (scrollpos_old < scrollpos) ? 'up'   : 'down';
 
 			element.className = element.className.replace(
 				/\btopio-scrolltop--[a-z]*\b/,
-				'topio-scrolltop--' + scroll_top
+				'topio-scrolltop--' + scrolltop				
 			);
 
-			if(new_scroll_position>scroll_position) {
-				scroll_direction = 'down';
-			} else {
-				scroll_direction = 'up';
-			}
-
-			scroll_position = new_scroll_position;
 			element.className = element.className.replace(
 				/\btopio-scrolldir--[a-z]+\b/,
-				'top-io--scrolldir--' + scroll_direction
+				'topio-scrolldir--' + scrolldir
 			);
+
+			var scrollpos_old = scrollpos;
 		});
 
+
+		/* Module */
 		var myModule = function() {
 
 		};
