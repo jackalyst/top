@@ -1,19 +1,20 @@
 /**
  * Typography
  */
-.r > span, p, h2, h3, h4, h5, code, ul, ol, li, input, label, textarea {
-  line-height: 22px;
+.row > span, p, h2, h3, h4, h5, code, ul, ol, li, input, label, textarea {
+  line-height: 24px;
   font-size: 14px;
 }
 
-h1 { font-size:28px; line-height: 44px; }
-h2 { font-size:22px; }
-h3 { font-size:18px; }
-h4 { font-size:16px; }
-h5 { font-size:15px; }
+h1 { font-size:32px; line-height: 48px; }
+h2 { font-size:24px; }
+h3 { font-size:20px; }
+h4 { font-size:18px; }
+h5 { font-size:16px; }
 
-p, ul, ol, form {
-  margin-bottom:22px;
+p, ul, ol, form,
+h1, h2, h3 {
+  margin-bottom: 12px;
 }
 
 ul ul, ul ol, ol ul, ol ol,
@@ -21,7 +22,7 @@ p:last-child, ul:last-child, ol:last-child {
   margin-bottom:0px;
 }
 ul, ol {
-  padding-left: 22px;
+  padding-left: 24px;
 }
 dt {
   font-weight: bold;
@@ -29,8 +30,10 @@ dt {
 dd {
   margin:0;
 }
+
 input, textarea {
   border:1px solid #BBB;
-  width:100%; padding:6px;
-  font-size:14px; line-height: 22px;
+  max-width:100%;
+  padding:6px;
+  font-size:15px; line-height: 24px;
 }
