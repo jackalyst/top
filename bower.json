@@ -1,11 +1,11 @@
 {
   "name": "top",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "authors": [
     {
       "name": "Jack Matier",
       "email": "self@jackalyst.com",
-      "homepage": "https://jackalyst.com"
+      "homepage": "https://www.jackalyst.com"
     }
   ],
   "description": "A lightweight framework to build amazing Web Applications and Websites",
@@ -24,7 +24,8 @@
     "test",
     "src"
   ],
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies":{
     "normalize.css": "3",
     "jquery": "1.*",
     "html5shiv": "3",
