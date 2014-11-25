@@ -45,15 +45,15 @@ html, body, p, h1, h2, h3, h4, h5, h6 ul, ol, li {
  */
 /* IE6/7 Center */
 .ie6 body, .ie7 body { text-align: center; }
-.ie6 body .r, .ie7 body .r { text-align: left; }
+.ie6 body .row, .ie7 body .row { text-align: left; }
 
-.r {
+.row {
 	width:100%;
   margin:0 auto;
   font-size:0;
 }
 
-.r span {
+.row span {
   width:100%;
   display: inline-block;
   vertical-align: top;
@@ -61,8 +61,8 @@ html, body, p, h1, h2, h3, h4, h5, h6 ul, ol, li {
 
  /* IE6, IE7
   ? Row width weren't being set for child rows */
-.ie6 .r span .r,
-.ie7 .r span .r {
+.ie6 .row span .row,
+.ie7 .row span .row {
   width:100%;
 }
 
@@ -79,15 +79,27 @@ html, body, p, h1, h2, h3, h4, h5, h6 ul, ol, li {
  *  960/12 = 80
  * 1440/12 = 120 
  */
-.r .c1 { width: 8.33%; }
-.r .c2 { width: 16.66%; }
-.r .c3 { width: 25.0%; }
-.r .c4 { width: 33.32%; }
-.r .c5 { width: 41.7%; }
-.r .c6 { width: 50%; }
-.r .c7 { width: 58.3%; }
-.r .c8 { width: 66.59%; }
-.r .c9 { width: 75.0%; }
-.r .c10 { width: 83.3%; }
-.r .c11 { width: 91.7%; }
-.r .c12 { width: 100.0%; }
+.row .c1 { width: 8.33%; }
+.row .c2 { width: 16.61%; }
+.row .c3 { width: 25.0%; }
+.row .c4 { width: 33.32%; }
+.row .c5 { width: 41.7%; }
+.row .c6 { width: 50%; }
+.row .c7 { width: 58.3%; }
+.row .c8 { width: 66.59%; }
+.row .c9 { width: 75.0%; }
+.row .c10 { width: 83.3%; }
+.row .c11 { width: 91.7%; }
+.row .c12 { width: 100.0%; }
+
+.o1 { margin-left: 8.33%; }
+.o2 { margin-left: 16.66%; }
+.o3 { margin-left: 25.0%; }
+.o4 { margin-left: 33.32%; }
+.o5 { margin-left: 41.7%; }
+.o6 { margin-left: 50%; }
+.o7 { margin-left: 58.3%; }
+.o8 { margin-left: 66.59%; }
+.o9 { margin-left: 75.0%; }
+.o10 { margin-left: 83.3%; }
+.o11 { margin-left: 91.7%; }
