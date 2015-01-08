@@ -1,8 +1,14 @@
 # Created by http://www.gitignore.io
 
-### Sass ###
+# Sass
 .sass-cache
 
 
-### Bower ###
+# Bower
 bower_components
+
+# Node Modules
+node_modules
+
+# Temp
+temp

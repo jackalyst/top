@@ -1,11 +1,13 @@
 ul.top-menu--vertical {
 	padding:0;
+
 	li {
 		display:inline-block;
 	}
 }
 ul.top-menu--horizontal {
 	padding:0;
+
 	&> li {
 		display: inline-block;
 	}

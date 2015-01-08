@@ -17,6 +17,8 @@ var currentScriptPath = (function () {
 var currentStylePath = currentScriptPath.replace(/[a-z]*\/$/g,'') + 'css/';
 
 
+
+
 /*!
  * Backwards Compatibility for addEventListener, removeEventListener, Event.preventDefault and Event.stopPropagation
  *
@@ -125,9 +127,8 @@ var currentStylePath = currentScriptPath.replace(/[a-z]*\/$/g,'') + 'css/';
 	});
 
 	function top_init() {
-		console.log('okay');
-		function checkcss(selector, callback) {			
-			return (document.querySelector(selector) === null) ? false : true; 
+		function checkcss(selector, callback) { /* querySelector: IE8 */
+			return (document.querySelector(selector)!==null);
 		}
 
 		// Is this blocking?
@@ -148,15 +149,22 @@ var currentStylePath = currentScriptPath.replace(/[a-z]*\/$/g,'') + 'css/';
 		if(checkcss('.topio')) {
 			require(['topio.min'], function(io) {});
 		}
+
+        /* Is topio used */
+        if(checkcss('[class*=topfn]')) {
+          require(['topfn.min'], function(fn) {});
+        }
+
 	}
 
+    /* Why didn't I write comments on this!? */
 	if(document.readyState != 'complete' && document.readyState != 'interactive') {
-		document.onreadystatechange = function() {
-				if(document.readyState == 'complete' || document.readyState == 'interactive') {
-					top_init();
-				}
-		};
+      document.onreadystatechange = function() {
+        if(document.readyState == 'complete' || document.readyState == 'interactive') {
+            top_init();
+        }
+      };
 	} else {
-		top_init();
+      top_init();
 	}
 });

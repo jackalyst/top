@@ -1,6 +1,14 @@
 /*! top.css unstable | MIT License */
 @import "../../bower_components/normalize.css/normalize.scss";
 @import "_core.scss";
+@import "_oo.scss";
 @import "_typography.scss";
 @import "_buttons.scss";
 @import "_menu.scss";
+
+@media screen and (max-width: 500px) {
+  .sidebar {
+    width: 500px; } }
+@media screen and (max-width: 500px) {
+  .finesse .sidebar {
+    width: 500px; } }

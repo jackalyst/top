@@ -1,0 +1,32 @@
+/*
+ * topoo
+ *
+ * Object Orientated CSS
+ */
+[class|=top] {
+
+  /* Setup for fixed ratio elements */
+  &[class*=ratio] {
+    > * {
+
+    }
+  }
+
+
+
+
+
+
+
+
+  &[class*=menu] {
+    &[class*=vertical] {
+
+    }
+    &[class*=horizontal] {
+
+    }
+  }
+
+
+}
