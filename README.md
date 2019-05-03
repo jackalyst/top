@@ -1,6 +1,8 @@
 Top (unstable)
 =======
 
+Note: This repository will be undergoing a major revision!
+
 Intends to be a complete opinionated [NIH](http://en.wikipedia.org/wiki/Not_invented_here) HTML5 [High Performance](http://developers.google.com/speed/pagespeed/insights/?url=top.kamris.com) front-end for developing todays websites compatible right down to IE8 using best of breed plugins. It achieves this through only requiring things that are in use and does so by analyzing the page upon document load. The upside is that this means content loads *fast*, but the ***downside*** is that it's prone to the [Flash of Unstyled Content](http://en.wikipedia.org/wiki/Flash_of_unstyled_content)
 
 ## Browser Support
